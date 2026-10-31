@@ -1,0 +1,1239 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<meta name="theme-color" content="#000000">
+<meta name="description" content="WB PRIMARY TET MOCK TEST">
+<meta property="og:title" content="TRIANGLE MOCK TEST | ৭১টি প্রশ্ন">
+<meta property="og:description" content="WB Primary TET Mock Test — ১৫০টি প্রশ্ন">
+<meta name="twitter:title" content="TRIANGLE MOCK TEST | ৭১টি প্রশ্ন">
+<meta name="twitter:description" content="WB Primary TET Mock Test — ১৫০টি প্রশ্ন">
+<meta name="application-name" content="TRIANGLE MATHEMATICS — MOCK TEST 71 QUESTIONS">
+<title>TRIANGLE MOCK TEST | ৭১টি প্রশ্ন</title>
+<style>
+:root{--bg:#000;--panel:#090909;--panel2:#111;--line:#292929;--text:#fff;--muted:#aaa;--green:#18e76b;--red:#ff3152;--gold:#ffd45a;--blue:#5f8cff}
+*{box-sizing:border-box}
+html,body{margin:0;width:100%;height:100%;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;overflow:hidden}
+body.light{--bg:#f4f6fa;--panel:#fff;--panel2:#f1f3f7;--line:#d8dce5;--text:#111;--muted:#626a78;--gold:#8b5d00;--blue:#315fce}
+button,input{font:inherit}
+button{cursor:pointer;-webkit-tap-highlight-color:transparent}
+.hidden{display:none!important}
+.topbar{position:fixed;left:0;right:0;top:0;height:68px;z-index:50;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:8px 12px;background:rgba(0,0,0,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+body.light .topbar{background:rgba(255,255,255,.95)}
+.leftbox{justify-self:start}
+.rightbox{justify-self:end;display:flex;align-items:center;gap:8px}
+.centerbox{justify-self:center;text-align:center;min-width:100px}
+.themeBtn,.adminBtn,.correctBtn{border:1px solid #444;border-radius:11px;padding:9px 12px;background:#111;color:#fff;font-weight:1000;letter-spacing:.03em}
+body.light .themeBtn,body.light .adminBtn,body.light .correctBtn{background:#fff;color:#111;border-color:#c4c9d3}
+.adminBtn{background:var(--gold);color:#000;border-color:var(--gold)}
+.correctBtn{display:block;margin:auto;background:#0b301b;border-color:#1e9c52;color:#69ff9d;min-width:110px}
+.timer.timerHidden{display:none!important}
+.timer{margin-top:3px;font-variant-numeric:tabular-nums;font-size:18px;font-weight:1000;letter-spacing:.04em}
+.timer.warn{color:#fff!important;animation:timerBlink .48s steps(2,start) infinite!important;transform:scale(1.32);text-shadow:0 0 6px #fff,0 0 16px var(--red),0 0 32px var(--red),0 0 48px #ff8a00;font-size:clamp(24px,4vw,34px)!important;letter-spacing:.08em}@keyframes timerBlink{0%,100%{opacity:1;filter:brightness(1.2);transform:scale(1.32)}50%{opacity:.28;filter:brightness(2.3);transform:scale(1.5)}}
+.screen{position:fixed;inset:68px 0 0;display:flex;align-items:center;justify-content:center;padding:18px}
+.startCard{width:min(560px,92vw);background:linear-gradient(180deg,#101010,#070707);border:1px solid #2a2a2a;border-radius:24px;padding:30px;box-shadow:0 25px 90px rgba(0,0,0,.65)}
+body.light .startCard{background:#fff;border-color:#d8dce5;box-shadow:0 20px 60px rgba(0,0,0,.10)}
+.brand{margin:0;text-align:center;font-size:clamp(30px,6vw,46px);font-weight:1000;letter-spacing:.10em}
+/* Cinematic poster text above MOCK TEST */
+.posterLines{
+  width:100%;
+  margin:0 auto 18px;
+  display:flex;
+  flex-direction:column;
+  gap:9px;
+}
+.posterLine{
+  position:relative;
+  overflow:hidden;
+  padding:10px 14px 11px;
+  border-radius:12px;
+  text-align:center;
+  font-size:clamp(12px,2.6vw,18px);
+  line-height:1.25;
+  font-weight:1000;
+  letter-spacing:.015em;
+  color:#fff7d6;
+  background:linear-gradient(135deg,#180700 0%,#4b1600 48%,#120500 100%);
+  border:1px solid rgba(255,193,72,.85);
+  box-shadow:0 0 0 1px rgba(255,91,0,.18) inset,0 5px 20px rgba(0,0,0,.45),0 0 18px rgba(255,116,0,.18);
+  text-shadow:0 2px 0 #2b0900,0 0 8px rgba(255,176,0,.55);
+}
+.posterLine::before,.posterLine::after{
+  content:"✦";
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  color:#ffd75a;
+  font-size:14px;
+  text-shadow:0 0 8px #ff7a00;
+}
+.posterLine::before{left:8px}.posterLine::after{right:8px}
+.posterLine.second{
+  background:linear-gradient(135deg,#031522 0%,#073d59 48%,#020a12 100%);
+  border-color:rgba(92,207,255,.9);
+  box-shadow:0 0 0 1px rgba(77,205,255,.18) inset,0 5px 20px rgba(0,0,0,.45),0 0 18px rgba(0,174,255,.2);
+  text-shadow:0 2px 0 #02121d,0 0 8px rgba(90,210,255,.5);
+}
+.posterLine.second::before,.posterLine.second::after{color:#8ee7ff}
+.posterTerm{color:#ffd65a}.second .posterTerm{color:#72dcff}
+@media(max-width:520px){
+  .posterLines{margin-bottom:14px;gap:7px}
+  .posterLine{padding:8px 17px;font-size:clamp(11px,3.15vw,15px);border-radius:10px}
+  .posterLine::before{left:5px}.posterLine::after{right:5px}
+}
+
+label{display:block;margin:28px 0 9px;font-weight:1000;font-size:18px}
+.name{width:100%;height:56px;border:1px solid #3a3a3a;border-radius:14px;background:#050505;color:#fff;padding:0 16px;outline:none;font-weight:800;font-size:18px}
+body.light .name{background:#f8f9fc;color:#111;border-color:#cfd4de}
+.name:focus{border-color:var(--blue)}
+.startBtn{width:100%;height:58px;margin-top:12px;border:0;border-radius:14px;background:#fff;color:#000;font-weight:1000;font-size:18px;letter-spacing:.04em}
+.exam{position:fixed;inset:68px 0 0;height:calc(100dvh - 68px);padding:10px 12px;overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch}
+.examInner{width:min(1100px,100%);max-width:1100px;margin:auto;display:block;min-height:0;padding-bottom:24px}
+.progress{height:58px;color:var(--muted);font-size:13px;font-weight:1000;padding:0 3px;display:block}
+.progressTop{height:28px;display:flex;align-items:center;justify-content:space-between;gap:8px;line-height:1.05}
+.progressTop span{font-weight:1000}
+.progressTrack{height:4px;width:100%;border-radius:999px;background:#ff3152;border:1px solid rgba(255,49,82,.65);overflow:hidden;box-shadow:inset 0 0 5px rgba(0,0,0,.35),0 0 5px rgba(255,49,82,.14)}
+.progressFill{height:100%;width:0%;background:#18e76b;border-radius:999px;transition:width .35s ease;box-shadow:0 0 7px rgba(24,231,107,.55)}
+.progressFill.done{background:#18e76b;box-shadow:0 0 9px rgba(24,231,107,.7)}
+.qcard{min-height:0;background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:0;display:flex;flex-direction:column;box-shadow:0 18px 70px rgba(0,0,0,.35);overflow:hidden;position:relative}.questionScroll{overflow:visible;padding:clamp(14px,2.2vh,22px);padding-bottom:18px;-webkit-overflow-scrolling:touch}.actions{margin:0;padding:10px clamp(14px,2.2vh,22px);border-top:1px solid var(--line);display:flex;justify-content:flex-end;background:var(--panel);z-index:5;box-shadow:0 -8px 18px rgba(0,0,0,.18)}
+.qnum{color:var(--gold);font-weight:1000;font-size:15px;margin-bottom:7px}
+.question{font-size:clamp(16px,2.3vh,21px);line-height:1.38;font-weight:800;max-width:1000px}
+.options{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:clamp(12px,2vh,18px)}
+.opt{min-height:54px;border:1px solid #333;border-radius:13px;background:var(--panel2);color:var(--text);padding:11px 13px;text-align:left;display:flex;gap:10px;align-items:flex-start;font-weight:750;line-height:1.28;font-size:clamp(14px,1.9vh,17px);transition:.12s}
+.opt:active{transform:scale(.995)}
+.opt.selected{border-color:var(--blue);box-shadow:0 0 0 1px var(--blue) inset}
+.opt:disabled{opacity:1!important;filter:none!important;color:inherit}
+.opt.correct{background:#123e23;border-color:#18e76b;color:#70ff9f;box-shadow:0 0 0 1px #18e76b inset}
+.opt.wrong{background:#470b17;border-color:#ff3152;color:#ff91a4;box-shadow:0 0 0 1px #ff3152 inset}
+.letter{font-weight:1000;min-width:24px}
+.feedback{min-height:26px;margin-top:7px;font-size:13px;font-weight:1000;max-height:none;overflow:visible;padding-right:4px;line-height:1.5;flex-shrink:0}
+.feedback.ok{color:var(--green)} .feedback.bad{color:var(--text)}
+.wrong-title{color:var(--red);font-size:16px;font-weight:1000;margin-bottom:6px}.explain{color:var(--green);background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 12px;max-height:30vh;overflow-y:auto;line-height:1.6;font-weight:750}
+.timer.warn{color:#fff;background:linear-gradient(135deg,#ff1744,#ff6b00,#ffd400,#ff1744);background-size:300% 300%;padding:6px 14px;border-radius:14px;font-size:clamp(22px,4vw,34px);line-height:1;box-shadow:0 0 10px #ff1744,0 0 24px #ff6b00,0 0 42px rgba(255,212,0,.8);text-shadow:0 0 7px #fff,0 0 16px #ff1744;animation:timerGlow 1.15s ease-in-out infinite,timerGradient 2s linear infinite;transform:scale(1.12)}
+@keyframes timerGlow{0%,100%{opacity:1;transform:scale(1.12)}50%{opacity:.55;transform:scale(1.22)}}
+@keyframes timerGradient{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+.actions{margin-top:auto;padding-top:10px;border-top:1px solid var(--line);display:flex;justify-content:flex-end;flex-shrink:0;background:var(--panel)}
+.allQuestion{padding:18px 0 22px;border-bottom:1px solid var(--line)}
+.allQuestion:first-child{padding-top:4px}
+.allQuestion:last-of-type{border-bottom:0}
+.finalSubmitArea{padding:22px 0 4px;text-align:center}
+.submitHint{color:var(--muted);font-weight:750;font-size:13px;line-height:1.45;margin-bottom:10px}
+.finalSubmitBtn{width:min(420px,100%);height:58px;background:#fff;color:#000;border-color:#fff;font-size:19px;box-shadow:0 8px 24px rgba(255,255,255,.12)}
+.finalSubmitBtn:active{transform:scale(.985)}
+.next{width:min(240px,100%);height:54px;border:2px solid #fff;border-radius:14px;background:#fff;color:#000;font-weight:1000;font-size:18px;transition:.12s;flex-shrink:0}.next.answer-correct{background:#18e76b;border-color:#18e76b;color:#000;box-shadow:0 0 14px rgba(24,231,107,.45)}.next.answer-wrong{background:#ff3152;border-color:#ff3152;color:#fff;animation:shake .45s ease-in-out 0s 2;box-shadow:0 0 14px rgba(255,49,82,.45)}@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-5px)}50%{transform:translateX(5px)}75%{transform:translateX(-3px)}}
+.next:disabled{opacity:.35;cursor:not-allowed}
+.next.tap-vibrate{animation:buttonVibrate .34s linear}
+@keyframes buttonVibrate{0%,100%{transform:translateX(0) scale(1)}20%{transform:translateX(-6px) scale(1.02)}40%{transform:translateX(6px) scale(1.02)}60%{transform:translateX(-5px) scale(1.02)}80%{transform:translateX(4px) scale(1.01)}}
+.revisionBox{margin-top:18px;padding:16px;border:1px solid #ff3152;border-radius:16px;background:linear-gradient(135deg,rgba(255,49,82,.12),rgba(255,212,90,.08));box-shadow:0 0 24px rgba(255,49,82,.12)}
+.revisionTitle{font-size:18px;font-weight:1000;color:#ffd45a}
+.revisionInfo{margin-top:5px;color:var(--muted);font-weight:750;line-height:1.45}
+.revisionLink{display:block;margin:16px auto 6px;width:min(520px,100%);padding:10px 14px;text-align:center;background:none;border:0;color:#ff0000;font-size:22px;font-weight:1000;text-decoration:underline;cursor:pointer;animation:revisionTextBlink .8s steps(1,end) infinite}.revisionLink:active{transform:scale(.98)}
+.revisionBtn{margin-top:11px;width:100%;min-height:54px;border:2px solid #ffd45a;border-radius:13px;background:linear-gradient(90deg,#5b0010,#9d1230,#5b0010);background-size:200% 100%;color:#fff;font-weight:1000;font-size:17px;box-shadow:0 0 12px rgba(255,49,82,.5);animation:revisionPulse 1.5s ease-in-out infinite}
+@keyframes revisionPulse{0%,100%{box-shadow:0 0 10px rgba(255,49,82,.45)}50%{box-shadow:0 0 26px rgba(255,212,90,.8)}}
+.result,.admin{position:fixed;inset:68px 0 0;overflow:auto;padding:18px}
+.resultCard,.adminCard{width:min(1150px,100%);margin:auto;background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:22px}
+.resultTitle{text-align:center;font-weight:1000;letter-spacing:.08em;margin:0}
+.candidate{text-align:center;color:var(--muted);font-weight:800;margin-top:7px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin-top:18px}
+.stat{border:1px solid var(--line);background:var(--panel2);border-radius:14px;padding:13px}
+.stat small{display:block;color:var(--muted);font-weight:800}
+.stat strong{display:block;font-size:22px;margin-top:4px;font-weight:1000}
+.review{margin-top:20px;display:grid;gap:9px}
+.reviewRow{border:1px solid var(--line);border-radius:13px;padding:13px;background:var(--panel2)}
+.reviewQ{font-weight:900;line-height:1.35}
+.reviewA{margin-top:7px;color:var(--muted);font-size:14px;line-height:1.4}
+.tag{display:inline-block;border-radius:999px;padding:4px 8px;font-size:11px;font-weight:1000;margin-left:5px}
+.ok{background:#123e23;color:#70ff9f} .bad{background:#470b17;color:#ff91a4} .skip{background:#303030;color:#bbb}
+.resultActions,.adminTools{display:flex;gap:9px;flex-wrap:wrap;margin-top:16px}
+.resultActions button,.adminTools button{border:1px solid #444;border-radius:11px;padding:11px 13px;background:#111;color:#fff;font-weight:900}
+body.light .resultActions button,body.light .adminTools button{background:#fff;color:#111;border-color:#c4c9d3}
+.danger{border-color:#9d253b!important;color:#ff91a4!important}
+.adminHead{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.adminTitle{margin:0;font-weight:1000}
+.tableWrap{overflow:auto;margin-top:16px}
+table{width:100%;border-collapse:collapse;min-width:900px}
+th,td{padding:10px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}
+th{color:var(--muted);font-size:12px}
+.empty{padding:30px;text-align:center;color:var(--muted);font-weight:800}
+.status{margin-top:10px;text-align:center;font-size:12px;font-weight:1000}
+#fx{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:1000}
+@media(max-width:700px){
+ .topbar{height:62px;padding:6px 6px;grid-template-columns:auto 1fr auto;gap:4px;overflow:visible}
+ .leftbox{min-width:0;overflow:visible}
+ .topButtons{gap:4px;flex-wrap:nowrap}
+ .screen,.exam,.result,.admin{inset:62px 0 0}
+ .exam{height:calc(100dvh - 62px);padding:7px 8px}
+ .themeBtn,.adminBtn,.correctBtn{font-size:9px;padding:7px 6px;border-radius:9px;letter-spacing:0}
+ .viewBtn{display:inline-flex!important;visibility:visible!important;opacity:1!important;font-size:8px;padding:7px 5px}
+ .correctBtn{min-width:68px;padding-left:5px;padding-right:5px}
+ .centerbox{min-width:68px}
+ .timer{font-size:15px}
+ .adminBtn{font-size:8px;padding:7px 5px}
+ .startCard{padding:23px}
+ .options{grid-template-columns:1fr;gap:7px}
+ .opt{min-height:49px;padding:9px 11px}
+ .qcard{border-radius:16px;padding:0}.questionScroll{padding:13px;padding-bottom:16px}.actions{padding:8px 13px}
+ .progress{height:42px;font-size:11px}
+ .progressTop{height:25px}
+ .progressTrack{height:15px}
+ .next{height:52px;width:100%}
+ .stats{grid-template-columns:repeat(2,1fr)}
+ .result,.admin{padding:10px}
+}
+@media(max-width:360px){
+ .topbar{padding-left:4px;padding-right:4px;gap:2px}
+ .topButtons{gap:2px}
+ .themeBtn{font-size:8px;padding:6px 4px}
+ .viewBtn{font-size:7px;padding:6px 4px}
+ .adminBtn{font-size:7px;padding:6px 4px}
+ .correctBtn{font-size:8px;min-width:62px}
+ .timer{font-size:14px}
+}
+@media(max-height:620px) and (orientation:landscape){
+ .question{font-size:15px;line-height:1.25}
+ .opt{min-height:42px;font-size:13px;padding:7px 9px}
+ .options{gap:6px;margin-top:7px}
+ .qcard{padding:0}
+ .questionScroll{padding:10px;padding-bottom:12px}
+ .actions{padding:7px 10px}
+ .next{height:45px}
+}
+@media print{
+ html,body{overflow:visible;background:#fff!important;color:#000!important}
+ .topbar,.resultActions,.adminTools,#fx{display:none!important}
+ .result,.admin{position:static;overflow:visible;padding:0}
+ .resultCard,.adminCard{border:0;box-shadow:none}
+}
+
+.topButtons{display:flex;align-items:center;gap:6px}
+.viewBtn{font-size:10px;padding:7px 9px;white-space:nowrap}
+.passageBox{max-height:none;overflow:visible;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px 18px;margin-bottom:12px;box-shadow:0 10px 35px rgba(0,0,0,.25)}
+.passageHead{text-align:center;font-size:18px;font-weight:1000;letter-spacing:.025em;color:var(--gold);margin-bottom:12px;line-height:1.5}
+.passageIntro{font-size:17px;font-weight:850;line-height:1.6;margin-bottom:12px}
+.passageText{font-family:Georgia,"Times New Roman",serif;font-size:21px;line-height:1.8;font-weight:650;letter-spacing:.01em}
+@media(max-width:700px){.passageBox{flex-basis:36vh;padding:14px 14px}.passageHead{font-size:16px}.passageText{font-size:19px;line-height:1.75}.passageIntro{font-size:16px}}
+@media(max-height:620px) and (orientation:landscape){.passageBox{flex-basis:30vh}.passageText{font-size:17px;line-height:1.55}}
+.viewModeWrap{position:absolute;inset:0;overflow:auto;padding:18px 12px 90px;background:var(--bg)}
+.viewModeInner{width:min(1100px,100%);margin:auto}
+.viewModeHeader{position:sticky;top:0;z-index:4;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px 14px;margin-bottom:10px;font-weight:1000;display:flex;justify-content:space-between;gap:10px}
+.viewModeHeader span{color:var(--muted);font-size:12px}
+.viewQuestion{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px;margin-bottom:10px}
+.viewQuestion .question{margin-bottom:10px}
+.viewQuestion .options{margin-top:8px}
+.viewOnlyOpt{pointer-events:none!important;cursor:default!important;opacity:1!important}
+.viewModeExit{position:sticky;bottom:0;width:100%;height:54px;border:2px solid #fff;border-radius:14px;background:#fff;color:#000;font-weight:1000;font-size:17px;margin-top:8px}
+body.light .viewModeExit{border-color:#111}
+@media(max-width:700px){
+  .viewBtn{font-size:9px;padding:7px 7px}
+  .viewModeWrap{padding:10px 8px 76px}
+  .viewModeHeader{font-size:12px;padding:10px}
+  .viewQuestion{padding:13px}
+}
+
+
+/* OMR answer sheet layout: options are display-only; only bubbles accept answers */
+.optionTextOnly{grid-template-columns:1fr!important}
+.optionStatic{pointer-events:none;cursor:default}
+.omrCaption{margin-top:16px;margin-bottom:8px;color:var(--muted);font-size:clamp(14px,2vw,18px);font-weight:1000}
+.omrRow{display:flex;align-items:center;gap:clamp(9px,2.2vw,18px);flex-wrap:wrap;background:var(--panel2);border:1px dashed var(--line);border-radius:15px;padding:12px 14px}
+.omrNumber{font-size:18px;min-width:30px}
+.omrBubble{width:clamp(48px,9vw,66px);height:clamp(48px,9vw,66px);border-radius:50%;border:3px solid #9299a8;background:var(--panel);color:var(--text);font-weight:1000;font-size:18px;display:flex;align-items:center;justify-content:center;padding:0}
+.omrBubble:disabled{opacity:1}
+.omrBubble.selected{box-shadow:0 0 0 2px var(--panel),0 0 0 4px var(--blue)}
+.omrBubble.correct{background:#16834c;border-color:#16834c;color:#fff}
+.omrBubble.wrong{background:#d9233d;border-color:#d9233d;color:#fff}
+.omrFeedback{margin-top:10px;font-size:clamp(16px,2.2vw,20px);font-weight:1000}
+.omrFeedback.ok{color:#16834c}.omrFeedback.bad{color:#c92b40}
+.allQuestion{padding:20px 0 22px;border-bottom:1px solid var(--line)}
+
+.studyScreen{position:fixed;inset:68px 0 0;overflow:auto;padding:16px;background:var(--bg);z-index:40}
+.studyInner{max-width:1100px;margin:auto}
+.studyCard{background:var(--panel);border:1px solid var(--line);border-radius:15px;padding:16px;margin:12px 0;line-height:1.65}
+.studyCard h3{margin:0 0 8px;color:var(--gold)}
+.studyFormula{padding:14px 12px;margin:12px 0;border-radius:10px;background:var(--panel2);font-weight:900;text-align:center;font-family:Cambria Math,STIX Two Math,"Times New Roman",serif;font-size:clamp(18px,2.5vw,23px);line-height:1.8;overflow-wrap:anywhere;border:1px solid var(--line)} .mathFrac{display:inline-flex;vertical-align:middle;flex-direction:column;align-items:center;line-height:1.15;margin:0 .16em;font-size:.95em}.mathFrac .num{border-bottom:1.5px solid currentColor;padding:0 .22em .12em}.mathFrac .den{padding:.12em .22em 0}.solutionStep{margin:7px 0;padding:8px 10px;border-left:3px solid var(--blue);background:var(--panel2);border-radius:5px;line-height:1.75}.shortSolve{border-left-color:var(--gold)}
+.studyEnglish{padding:10px 0;border-top:1px solid var(--line);line-height:1.65;font-size:clamp(15px,2vw,18px)}
+.studyCard p{line-height:1.8}
+.studyCard ol{padding-left:28px;line-height:1.8}
+.studyCard h3{font-size:clamp(17px,2.3vw,21px)}
+.studyEnglish{margin-top:8px;color:var(--blue);font-weight:750}
+.bilingualQuestion{font-size:clamp(16px,2.1vw,19px);font-weight:800;line-height:1.85}
+.englishInBrackets{color:var(--blue);font-weight:700}
+.mathDisplay{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:.35em;line-height:2.1}
+.solutionMath{font-family:Cambria Math,STIX Two Math,"Times New Roman",serif;text-align:center;font-size:clamp(17px,2.2vw,21px);font-weight:800;line-height:2.15;padding:5px 3px;overflow-wrap:anywhere}
+.solutionText{line-height:1.85;padding:4px 2px}
+.studyActions{position:sticky;bottom:0;background:var(--bg);padding:10px 0;display:flex;gap:8px}
+.studyActions button{flex:1;min-height:52px;border:0;border-radius:12px;font-weight:1000;background:var(--green);color:#000}
+@media(max-width:700px){.studyScreen{inset:62px 0 0;padding:9px}.studyCard{padding:12px}}
+
+</style>
+
+<style id="revision-banner-style">#revisionBanner{display:none;text-align:center;font-weight:800;font-size:22px;line-height:1.4;margin:12px 0;padding:0;background:none;border:none;box-shadow:none;}
+#revisionBanner.show{display:block}
+.revisionStar{color:red;font-weight:800;animation:revisionBlink 1s step-end infinite;text-shadow:none;background:none;}
+.revisionText{color:#16a34a;font-weight:800;animation:revisionBlink 1s step-end infinite;text-shadow:none;background:none;}
+@keyframes revisionTextBlink{0%,100%{opacity:1;filter:brightness(1.1)}50%{opacity:.22;filter:brightness(2.4)}}
+@keyframes revisionStarBlink{0%,100%{opacity:1;filter:brightness(1.1)}50%{opacity:.18;filter:brightness(2.5)}}</style>
+<style id="revisionTextFix">
+.revisionText{
+  color:#ff0000 !important;
+  font-weight:900 !important;
+  font-size:1.12em !important;
+  text-shadow:none !important;
+  background:none !important;
+  border:none !important;
+  animation:revisionTextBlink 0.8s steps(1,end) infinite !important;
+}
+@keyframes revisionTextBlink{
+  0%,49%{opacity:1;visibility:visible}
+  50%,100%{opacity:0;visibility:hidden}
+}
+</style>
+<style id="REAL_EXAM_LAST2_TIMER_ONLY">
+#timer.real-exam-last2{
+  color:#ff0000 !important;
+  background:transparent !important;
+  background-color:transparent !important;
+  border:0 !important;
+  box-shadow:none !important;
+  text-shadow:none !important;
+  animation:realExamLast2Blink 1.8s ease-in-out infinite !important;
+}
+@keyframes realExamLast2Blink{
+  0%,100%{opacity:1}
+  50%{opacity:.45}
+}
+</style>
+
+<style id="REAL_EXAM_LAST2_TIMER_STYLE">
+#timer.real-exam-last2{color:#ff0000!important;background:transparent!important;border:0!important;box-shadow:none!important;text-shadow:none!important;animation:realExamLast2Blink 0.8s steps(1,end) infinite!important}
+@keyframes realExamLast2Blink{0%,49%{opacity:1}50%,100%{opacity:.2}}
+</style>
+</head>
+<body>
+<div id="viewScreen" class="hidden" style="position:fixed;inset:0;z-index:200;background:var(--bg);"></div>
+<canvas id="fx"></canvas>
+
+<header class="topbar">
+  <div class="leftbox"><div class="topButtons"><button id="themeBtn" class="themeBtn" type="button">☀ THEME</button><button id="viewBtn" class="themeBtn viewBtn" type="button">VIEW QUESTIONS</button></div></div>
+  <div class="centerbox">
+    <button id="correctBtn" class="correctBtn" type="button">CORRECT: 0</button>
+    <div id="timer" class="timer">150:00</div>
+  </div>
+  <div class="rightbox"><button id="adminBtn" class="adminBtn" type="button">ADMIN PORTAL</button></div>
+</header>
+
+<section id="start" class="screen">
+  <div class="startCard">
+    <input id="candidate" class="name" autocomplete="name" spellcheck="false">
+    <button id="startBtn" class="startBtn" type="button">STUDY FORMULAS & SOLUTIONS</button>
+  </div>
+</section>
+
+<section id="studyScreen" class="studyScreen hidden"><div class="studyInner">
+<div class="studyCard"><h2>ত্রিভুজের সূত্র ও ১–৭১ নম্বর অঙ্কের সমাধান</h2>
+<p>প্রথমে সূত্রগুলি পড়ুন। প্রতিটি প্রশ্নের বাংলা লেখার ঠিক পরেই বন্ধনীর মধ্যে সম্পূর্ণ ইংরেজি অনুবাদ দেওয়া হয়েছে। সূত্র ও সমাধানের ভগ্নাংশ লব-হর আকারে দেখানো হয়।</p>
+<h3>গুরুত্বপূর্ণ সূত্রসমূহ · Important Formulae</h3><ul>
+<li>ত্রিভুজের ক্ষেত্রফল · Area of a triangle: <div class="studyFormula">A = <span class="mathFrac"><span class="num">1</span><span class="den">2</span></span> × b × h</div></li>
+<li>উচ্চতা · Height: <div class="studyFormula">h = <span class="mathFrac"><span class="num">2A</span><span class="den">b</span></span></div></li>
+<li>সমবাহু ত্রিভুজ · Equilateral triangle: <div class="studyFormula">A = <span class="mathFrac"><span class="num">√3a²</span><span class="den">4</span></span> ; h = <span class="mathFrac"><span class="num">√3a</span><span class="den">2</span></span> ; P = 3a</div></li>
+<li>সমদ্বিবাহু ত্রিভুজের উচ্চতা: h = √(a² − b²/4)</li>
+<li>সমকোণী ত্রিভুজ: a² + b² = c² · Pythagorean theorem</li>
+<li>হেরনের সূত্র: A = √[s(s−a)(s−b)(s−c)], s=(a+b+c)/2</li>
+<li>ক্ষেত্রফলের অনুপাত: A₁:A₂ = b₁h₁:b₂h₂</li><li>দুই বাহু ও অন্তর্ভুক্ত কোণ: A = ½ab sin C</li>
+<li>বাহু k গুণ হলে ক্ষেত্রফল k² গুণ হয় · Area scales by the square of the side scale factor.</li></ul></div>
+<div id="studyQuestionList"></div>
+<div class="studyActions"><button id="startMockFromStudy" type="button">৭১টি সমাধান শেষ · START MOCK TEST</button></div>
+</div></section><section id="exam" class="exam hidden">
+  <div class="examInner">
+    <div class="progress"><div class="progressTop"><span id="progress"></span><span id="sectionLabel"></span></div><div class="progressTrack"><div id="progressFill" class="progressFill"></div></div></div>
+
+    <div id="revisionBanner"><span class="revisionStar">★</span> <span class="revisionText">যেগুলি ভুল করলাম</span> <span class="revisionStar">★</span></div><div id="qcard" class="qcard"></div>
+  </div>
+</section>
+
+<section id="result" class="result hidden"></section>
+
+<section id="admin" class="admin hidden">
+  <div class="adminCard">
+    <div class="adminHead">
+      <div><h2 class="adminTitle">CENTRAL SCOREBOARD ADMIN PORTAL</h2></div>
+      <div class="adminTools">
+        <button id="refreshAdmin">REFRESH RESULTS</button>
+        <button id="csvAdmin">DOWNLOAD RESULTS CSV</button>
+        <button id="printAdmin">PRINT / SAVE PDF REPORT</button>
+        <button id="clearAdmin" class="danger">CLEAR ALL RESULTS</button>
+      </div>
+    </div>
+    <div id="adminTable"></div>
+  </div>
+</section>
+
+<script>
+const TEST_TITLE="TRIANGLE FORMULAS & MOCK TEST | 71 QUESTIONS";
+const PASSAGE_LABEL="";
+const PASSAGE_INTRO="Triangle formulas and solved examples";
+const PASSAGE_TEXT="";
+const PASSAGE_BLOCKS={};
+function passageHTML(id){
+  const p=PASSAGE_BLOCKS[id];
+  if(!p)return "";
+  return `<div class="passageBox"><div class="passageHead">${esc(p.label)}</div><div class="passageText">${esc(p.text).replace(/\n/g,"<br><br>")}</div></div>`;
+}
+const QUESTIONS=[{"orig":1,"id":1,"text":"একটি ত্রিভুজের ক্ষেত্রফল 200 বর্গসেমি। ভূমি 40 সেমি হলে উচ্চতা কত?","options":["14 সেমি","8 সেমি","12 সেমি","10 সেমি"],"answer":"D","explanation":"সূত্র (Formula): h=2A/b. সমাধান: h=2×200/40=10 সেমি.","formula":"h=2A/b","solution":"h=2×200/40=10 সেমি","english":"The area of a triangle is 200 cm². If its base is 40 cm, what is its height?","kind":"Triangle Mathematics"},{"orig":2,"id":2,"text":"একটি সমবাহু ত্রিভুজের প্রতি বাহু 12 সেমি। ক্ষেত্রফল কত?","options":["72/√3","36/√3","3√3","36√3"],"answer":"D","explanation":"সূত্র (Formula): A=(√3/4)a². সমাধান: A=(√3/4)×12²=36√3 বর্গসেমি.","formula":"A=(√3/4)a²","solution":"A=(√3/4)×12²=36√3 বর্গসেমি","english":"Each side of an equilateral triangle is 12 cm long. What is its area in square centimetres? [SSC MTS Exam 2023]","kind":"Triangle Mathematics"},{"orig":3,"id":3,"text":"সমবাহু ত্রিভুজের ক্ষেত্রফল 36√3 বর্গমিটার। পরিসীমা কত?","options":["12","18√3","36","36√3"],"answer":"C","explanation":"A = (√3/4)a². 36√3 = (√3/4)a² ⇒ a² = 144 ⇒ a = 12 m. Perimeter P = 3a = 36 m.","formula":"A=(√3/4)a²","solution":"A = (√3/4)a². 36√3 = (√3/4)a² ⇒ a² = 144 ⇒ a = 12 m. Perimeter P = 3a = 36 m.","english":"The area of an equilateral triangle is 36√3 m². What is its perimeter in metres? [SSC CGL Tier-I Exam 2020]","kind":"Triangle Mathematics","short":"Because A = (√3/4)a², the side is 12 m; multiply by 3 to get P = 36 m."},{"orig":4,"id":4,"text":"সমদ্বিবাহু ত্রিভুজের সমান বাহু 5 সেমি করে এবং ভূমি 8 সেমি। ক্ষেত্রফল কত?","options":["25","12","6","11"],"answer":"B","explanation":"সমান বাহু 5 সেমি, ভূমি 8 সেমি। লম্ব ভূমিকে সমদ্বিখণ্ডিত করে, তাই অর্ধভূমি 4 সেমি। h = √(5²−4²) = 3 সেমি। ক্ষেত্রফল A = ½×8×3 = 12 বর্গসেমি।","formula":"h=√(a²−b²/4), A=bh/2","solution":"সমান বাহু 5 সেমি, ভূমি 8 সেমি। লম্ব ভূমিকে সমদ্বিখণ্ডিত করে, তাই অর্ধভূমি 4 সেমি। h = √(5²−4²) = 3 সেমি। ক্ষেত্রফল A = ½×8×3 = 12 বর্গসেমি।","english":"An isosceles triangle has two equal sides, each 5 cm long, and a third side 8 cm long. What is its area in cm²? [SSC CHSL Tier-I (CBE), 2023]","kind":"Triangle Mathematics","short":"শুধু 5–4–3 পিথাগোরাস ত্রয়ী মনে রাখুন: উচ্চতা 3; ক্ষেত্রফল ½×8×3 = 12।"},{"orig":5,"id":5,"text":"সমদ্বিবাহু ত্রিভুজের পরিসীমা 32 সেমি এবং ভূমির ওপর উচ্চতা 8 সেমি। ক্ষেত্রফল কত?","options":["24","32","48","40"],"answer":"C","explanation":"পরিসীমা 32 সেমি এবং উচ্চতা 8 সেমি। সমান বাহু a ও ভূমি b হলে 2a+b=32 এবং a²=8²+(b/2)²। a=10, b=12 হলে শর্ত পূরণ হয়। ক্ষেত্রফল = ½×12×8 = 48 বর্গসেমি; বিকল্পে 48 নেই, তাই প্রদত্ত বিকল্পে সঠিক উত্তর নেই।","formula":"সমান বাহু a, ভূমি b; 2a+b=32","solution":"পরিসীমা 32 সেমি এবং উচ্চতা 8 সেমি। সমান বাহু a ও ভূমি b হলে 2a+b=32 এবং a²=8²+(b/2)²। a=10, b=12 হলে শর্ত পূরণ হয়। ক্ষেত্রফল = ½×12×8 = 48 বর্গসেমি; বিকল্পে 48 নেই, তাই প্রদত্ত বিকল্পে সঠিক উত্তর নেই।","english":"The perimeter of an isosceles triangle is 32 cm, and its altitude to the unequal side is 8 cm. What is its area in cm²? [Assistant Grade, 1997]","kind":"Triangle Mathematics","short":"a=10, b=12 যাচাই করলে পরিসীমা 32 এবং উচ্চতা 8 হয়; ক্ষেত্রফল 48 বর্গসেমি। বিকল্পে এই মান নেই।"},{"orig":6,"id":6,"text":"সমকোণী ত্রিভুজের লম্ব বাহু 15 ও 20 সেমি। পরিসীমা কত?","options":["50","60","70","40"],"answer":"B","explanation":"সূত্র (Formula): c=√(a²+b²). সমাধান: c=√(225+400)=25; পরিসীমা=15+20+25=60 সেমি. সঠিক বিকল্প: B.","formula":"c=√(a²+b²)","solution":"c=√(225+400)=25; পরিসীমা=15+20+25=60 সেমি","english":"The two sides enclosing the right angle of a right-angled triangle are 15 cm and 20 cm. What is its perimeter? [SSC CHSL (10+2) Tier-I Exam 2021]","kind":"Triangle Mathematics"},{"orig":7,"id":7,"text":"সমকোণী ত্রিভুজের অতিভুজ 10 সেমি এবং এক বাহু 8 সেমি। ক্ষেত্রফল কত?","options":["20","21","22","24"],"answer":"D","explanation":"অন্য লম্ব বাহু = √(10²−8²) = √36 = 6 সেমি। ক্ষেত্রফল = ½×8×6 = 24 বর্গসেমি।","formula":"অন্য বাহু=√(c²−a²), A=ab/2","solution":"অন্য লম্ব বাহু = √(10²−8²) = √36 = 6 সেমি। ক্ষেত্রফল = ½×8×6 = 24 বর্গসেমি।","english":"The hypotenuse of a right-angled triangle is 10 cm, and one other side is 8 cm. What is its area in cm²?","kind":"Triangle Mathematics","short":"10–8–6 হলো 3–4–5 ত্রয়ীর দ্বিগুণ; ক্ষেত্রফল = ½×8×6 = 24।"},{"orig":8,"id":8,"text":"ত্রিভুজের বাহু 5, 4 ও √41 সেমি। ক্ষেত্রফল কত?","options":["20","5+4+√41","10","(5+4+√41)/2"],"answer":"C","explanation":"সূত্র (Formula): পিথাগোরাসের বিপরীত পরীক্ষা. সমাধান: 5²+4²=25+16=41=(√41)²; সমকোণী, ক্ষেত্রফল=½×5×4=10.","formula":"পিথাগোরাসের বিপরীত পরীক্ষা","solution":"5²+4²=25+16=41=(√41)²; সমকোণী, ক্ষেত্রফল=½×5×4=10","english":"The three sides of a triangle are 5 cm, 4 cm and √41 cm. What is its area in cm²? [SSC CGL Exam 2000]","kind":"Triangle Mathematics"},{"orig":9,"id":9,"text":"ত্রিভুজের বাহু 75, 80, 25 সেমি। ক্ষেত্রফল কত?","options":["700√21","400√21","500√21","150√39"],"answer":"D","explanation":"অর্ধপরিসীমা s = (75+80+25)/2 = 90। হেরনের সূত্রে A = √[90×(90−75)×(90−80)×(90−25)] = √(90×15×10×65) = 150√39 বর্গসেমি।","formula":"Heron: A=√[s(s−a)(s−b)(s−c)]","solution":"অর্ধপরিসীমা s = (75+80+25)/2 = 90। হেরনের সূত্রে A = √[90×(90−75)×(90−80)×(90−25)] = √(90×15×10×65) = 150√39 বর্গসেমি।","english":"The three sides of a triangle are 75 cm, 80 cm and 25 cm. What is its area?","kind":"Triangle Mathematics","short":"Heron’s formula সরাসরি বসান; ফল 150√39 বর্গসেমি, তাই বিকল্প 4।"},{"orig":10,"id":10,"text":"ত্রিভুজের বাহু 6, 8, 10 সেমি। বৃহত্তম বাহুর ওপর উচ্চতা কত?","options":["8","10","4.8","4.4"],"answer":"C","explanation":"সূত্র (Formula): A=½bh. সমাধান: ক্ষেত্রফল=½×6×8=24; h=2A/10=4.8 সেমি.","formula":"A=½bh","solution":"ক্ষেত্রফল=½×6×8=24; h=2A/10=4.8 সেমি","english":"The sides of a triangle are 6 cm, 8 cm and 10 cm. What is the length of the perpendicular drawn from the vertex opposite the longest side to that side? [CDS 2000]","kind":"Triangle Mathematics"},{"orig":11,"id":11,"text":"ত্রিভুজের বাহু 65,70,75 সেমি। ক্ষুদ্রতম বাহুর ওপর উচ্চতা কত?","options":["840/13","740/13","720/13","715/13"],"answer":"A","explanation":"সূত্র (Formula): Heron ও h=2A/b. সমাধান: s=105; A=√(105×40×35×30)=2100; h=4200/65=840/13 সেমি.","formula":"Heron ও h=2A/b","solution":"s=105; A=√(105×40×35×30)=2100; h=4200/65=840/13 সেমি","english":"The sides of a triangle are 65 cm, 70 cm and 75 cm. What is the altitude to the shortest side, in centimetres?","kind":"Triangle Mathematics"},{"orig":12,"id":12,"text":"সমকোণী সমদ্বিবাহু ত্রিভুজের অতিভুজ 4√2 সেমি। ক্ষেত্রফল কত?","options":["6√2","6","8","8√2"],"answer":"C","explanation":"সূত্র (Formula): সমান লম্ব বাহু=ক/√2. সমাধান: প্রতিটি লম্ব বাহু=4; ক্ষেত্রফল=½×4×4=8.","formula":"সমান লম্ব বাহু=ক/√2","solution":"প্রতিটি লম্ব বাহু=4; ক্ষেত্রফল=½×4×4=8","english":"The hypotenuse of a right-angled isosceles triangle is 4√2 cm. What is its area in cm²?","kind":"Triangle Mathematics"},{"orig":13,"id":13,"text":"সমকোণী সমদ্বিবাহু ত্রিভুজের পরিসীমা 6√2(√2+1)। অতিভুজ কত?","options":["3√2","5√2","4√2","6√2"],"answer":"D","explanation":"সমকোণী সমদ্বিবাহু ত্রিভুজের সমান লম্ব বাহু a হলে P = a(2+√2) = a√2(√2+1)। প্রদত্ত P = 6√2(√2+1), তাই a = 6। অতিভুজ = a√2 = 6√2 সেমি।","formula":"P=a(2+√2), c=a√2","solution":"সমকোণী সমদ্বিবাহু ত্রিভুজের সমান লম্ব বাহু a হলে P = a(2+√2) = a√2(√2+1)। প্রদত্ত P = 6√2(√2+1), তাই a = 6। অতিভুজ = a√2 = 6√2 সেমি।","english":"The perimeter of a right-angled isosceles triangle is 6√2(√2 + 1) cm. What is its hypotenuse?","kind":"Triangle Mathematics","short":"P = a√2(√2+1); মিলিয়ে a = 6, তাই অতিভুজ 6√2।"},{"orig":14,"id":14,"text":"সমকোণী সমদ্বিবাহু ত্রিভুজের পরিসীমা 4(√2+1)। ক্ষেত্রফল কত?","options":["1","4","3","2"],"answer":"B","explanation":"সমান লম্ব বাহু a হলে P = a(2+√2)। তাই a = 4(√2+1)/(2+√2) = 2√2। ক্ষেত্রফল = ½a² = ½×8 = 4 বর্গসেমি।","formula":"P=a(2+√2), A=a²/2","solution":"সমান লম্ব বাহু a হলে P = a(2+√2)। তাই a = 4(√2+1)/(2+√2) = 2√2। ক্ষেত্রফল = ½a² = ½×8 = 4 বর্গসেমি।","english":"The perimeter of a right-angled isosceles triangle is 4(√2 + 1) cm. What is its area in cm²?","kind":"Triangle Mathematics","short":"পরিসীমার সূত্র থেকে a = 2√2; ক্ষেত্রফল = a²/2 = 4।"},{"orig":15,"id":15,"text":"সমকোণী ত্রিভুজের দুই লম্ব বাহুর একটি অপরটির 4 গুণ; ক্ষেত্রফল 32। অতিভুজ?","options":["5√17","3√17","4√17","2√17"],"answer":"C","explanation":"সূত্র (Formula): A=xy/2, c=√(x²+y²). সমাধান: x=4y; 2y²×4? ½×4y×y=32 ⇒ y=4, x=16; c=4√17. সঠিক বিকল্প: C.","formula":"A=xy/2, c=√(x²+y²)","solution":"x=4y; 2y²×4? ½×4y×y=32 ⇒ y=4, x=16; c=4√17","english":"In a right-angled triangle, one side enclosing the right angle is four times the other. If the area is 32 cm², what is the length of the hypotenuse?","kind":"Triangle Mathematics"},{"orig":16,"id":16,"text":"সমকোণী সমদ্বিবাহু ত্রিভুজের ক্ষেত্রফল 4.5। পরিসীমা?","options":["4√2(√2+1)","3√2(√2+1)","√2(√2+1)","√2+1"],"answer":"B","explanation":"সূত্র (Formula): A=a²/2, P=a(2+√2). সমাধান: a²=9 ⇒ a=3; P=3(2+√2)=3√2(√2+1).","formula":"A=a²/2, P=a(2+√2)","solution":"a²=9 ⇒ a=3; P=3(2+√2)=3√2(√2+1)","english":"The area of a right-angled isosceles triangle is 4.5 cm². What is its perimeter?","kind":"Triangle Mathematics"},{"orig":17,"id":17,"text":"সমান দৈর্ঘ্যের তারে সমবাহু ত্রিভুজ ও বর্গ বানালে ক্ষেত্রফলের অনুপাত?","options":["2:√3","4:9√3","4:3√3","8:3√3"],"answer":"C","explanation":"সূত্র (Formula): একই পরিসীমা P; Aত্রি= P²√3/36, Aবর্গ=P²/16. সমাধান: ত্রিভুজ:বর্গ = (√3/36):(1/16)=4√3:9; বিকল্পে 4:3√3 দেওয়া, প্রশ্ন/বিকল্প যাচাই দরকার.","formula":"একই পরিসীমা P; Aত্রি= P²√3/36, Aবর্গ=P²/16","solution":"ত্রিভুজ:বর্গ = (√3/36):(1/16)=4√3:9; বিকল্পে 4:3√3 দেওয়া, প্রশ্ন/বিকল্প যাচাই দরকার","english":"An equilateral triangle and a square are made from wires of equal length. What is the ratio of their areas? [SSC CGL Exam 2004]","kind":"Triangle Mathematics"},{"orig":18,"id":18,"text":"দুটি ত্রিভুজের ভূমির অনুপাত 2:3, উচ্চতার অনুপাত 4:5। ক্ষেত্রফলের অনুপাত?","options":["5:8","15:8","8:5","8:15"],"answer":"D","explanation":"সূত্র (Formula): ক্ষেত্রফলের অনুপাত=b₁h₁:b₂h₂. সমাধান: 2×4:3×5=8:15.","formula":"ক্ষেত্রফলের অনুপাত=b₁h₁:b₂h₂","solution":"2×4:3×5=8:15","english":"The ratio of the bases of two triangles is 2 : 3, and the ratio of their heights is 4 : 5. What is the ratio of their areas?","kind":"Triangle Mathematics"},{"orig":19,"id":19,"text":"ক্ষেত্রফলের অনুপাত 3:5, ভূমির অনুপাত 2:5। উচ্চতার অনুপাত?","options":["3:5","2:3","3:2","5:2"],"answer":"C","explanation":"সূত্র (Formula): A₁/A₂=(b₁/b₂)(h₁/h₂). সমাধান: h₁:h₂=(3/5)/(2/5)=3:2.","formula":"A₁/A₂=(b₁/b₂)(h₁/h₂)","solution":"h₁:h₂=(3/5)/(2/5)=3:2","english":"The ratio of the areas of two triangles is 3 : 5, and the ratio of their bases is 2 : 5. What is the ratio of their heights?","kind":"Triangle Mathematics"},{"orig":20,"id":20,"text":"ক্ষেত্রফলের অনুপাত 5:3, উচ্চতার অনুপাত 5:7। ভূমির অনুপাত?","options":["7:5","3:7","7:3","2:3"],"answer":"C","explanation":"সূত্র (Formula): b₁:b₂=(A₁/A₂)÷(h₁/h₂). সমাধান: (5/3)÷(5/7)=7/3; অনুপাত 7:3.","formula":"b₁:b₂=(A₁/A₂)÷(h₁/h₂)","solution":"(5/3)÷(5/7)=7/3; অনুপাত 7:3","english":"The ratio of the areas of two triangles is 5 : 3, and the ratio of their heights is 5 : 7. What is the ratio of their corresponding bases? [SSC CGL Tier-I Exam 2022]","kind":"Triangle Mathematics"},{"orig":21,"id":21,"text":"সমকোণী ত্রিভুজের অতিভুজ 5 সেমি এবং পরিসীমা 20 সেমি। ক্ষেত্রফল?","options":["60","25","50","75"],"answer":"","explanation":"তথ্য অসংগত: অতিভুজ 5 হলে দুই লম্ব বাহুর যোগ 15 হতে পারে না; প্রতিটি লম্ব বাহু 5-এর চেয়ে ছোট, তাই পরিসীমা 20 অসম্ভব। মূল প্রশ্ন/বিকল্প যাচাই করুন।","formula":"অতিভুজ 5 হলে অন্য দুই বাহুর যোগ 15","solution":"তথ্য অসংগত: অতিভুজ 5 হলে দুই লম্ব বাহুর যোগ 15 হতে পারে না; প্রতিটি লম্ব বাহু 5-এর চেয়ে ছোট, তাই পরিসীমা 20 অসম্ভব। মূল প্রশ্ন/বিকল্প যাচাই করুন।","english":"The hypotenuse of a right-angled triangle is 5 cm and its perimeter is 20 cm. What is its area in cm²?","kind":"Triangle Mathematics","short":"প্রথমে প্রদত্ত তথ্য ও বিকল্প মিলিয়ে দেখুন। হিসাবের সঠিক ফল কোনো বিকল্পে না থাকলে প্রশ্ন/বিকল্পে মুদ্রণভুল আছে; অনুমান করে ভুল উত্তর নির্বাচন করবেন না."},{"orig":22,"id":22,"text":"সমকোণী ত্রিভুজের ক্ষেত্রফল 200 ও পরিসীমা 40 সেমি। অতিভুজ?","options":["10√2","20","10","20√2"],"answer":"","explanation":"তথ্য অসংগত: ক্ষেত্রফল 200 হলে দুই লম্ব বাহুর গুণফল 400; এদের প্রত্যেকটি ও অতিভুজের সমষ্টি 40 হওয়া সম্ভব নয়। মূল প্রশ্ন/বিকল্প যাচাই করুন।","formula":"A=ab/2; a²+b²=c²","solution":"তথ্য অসংগত: ক্ষেত্রফল 200 হলে দুই লম্ব বাহুর গুণফল 400; এদের প্রত্যেকটি ও অতিভুজের সমষ্টি 40 হওয়া সম্ভব নয়। মূল প্রশ্ন/বিকল্প যাচাই করুন।","english":"The area of a right-angled triangle is 200 cm² and its perimeter is 40 cm. What is its hypotenuse?","kind":"Triangle Mathematics","short":"প্রথমে প্রদত্ত তথ্য ও বিকল্প মিলিয়ে দেখুন। হিসাবের সঠিক ফল কোনো বিকল্পে না থাকলে প্রশ্ন/বিকল্পে মুদ্রণভুল আছে; অনুমান করে ভুল উত্তর নির্বাচন করবেন না."},{"orig":23,"id":23,"text":"20 মিটার মই ল্যাম্পপোস্টে মাটি থেকে 10 মিটার উচ্চতায় ঠেকেছে। পাদদেশের দূরত্ব?","options":["20√3","10√3","10√2","20√2"],"answer":"B","explanation":"সূত্র (Formula): x=√(L²−h²). সমাধান: x=√(400−100)=10√3 মিটার.","formula":"x=√(L²−h²)","solution":"x=√(400−100)=10√3 মিটার","english":"A 20-metre ladder touches a lamppost at a point 10 metres above the foot of the post. How far is the foot of the ladder from the post?","kind":"Triangle Mathematics"},{"orig":24,"id":24,"text":"সমদ্বিবাহু ত্রিভুজের সমান বাহু 10 সেমি, অন্তর্ভুক্ত কোণ 45°। ক্ষেত্রফল?","options":["35√2","20√2","25√2","10√2"],"answer":"C","explanation":"সূত্র (Formula): A=½ab sin C. সমাধান: A=½×10×10×sin45°=25√2; সঠিক বিকল্প 3. সঠিক বিকল্প: C.","formula":"A=½ab sin C","solution":"A=½×10×10×sin45°=25√2; সঠিক বিকল্প 3","english":"An isosceles triangle has two equal sides of 10 cm each and an included angle of 45°. What is its area in cm²? [SSC CPO Sub-Inspector 2008]","kind":"Triangle Mathematics"},{"orig":25,"id":25,"text":"সমদ্বিবাহু ত্রিভুজের সমান বাহু 20 সেমি, অন্তর্ভুক্ত কোণ 30°। ক্ষেত্রফল?","options":["100","50","25","75"],"answer":"B","explanation":"সূত্র (Formula): A=½ab sin C. সমাধান: A=½×20×20×½=100.","formula":"A=½ab sin C","solution":"A=½×20×20×½=100","english":"An isosceles triangle has two equal sides of 20 cm each and an included angle of 30°. What is its area in cm²?","kind":"Triangle Mathematics"},{"orig":26,"id":26,"text":"সমান বাহু 40 সেমি, অন্তর্ভুক্ত কোণ 45°। সমান বাহুর ওপর অঙ্কিত লম্বের উচ্চতা?","options":["15√2","30√2","10√2","20√2"],"answer":"D","explanation":"সমান বাহু 40 সেমি এবং অন্তর্ভুক্ত কোণ 45°। ক্ষেত্রফল = ½×40×40×sin45° = 400√2। ওই 40 সেমি বাহুর ওপর উচ্চতা h হলে 400√2 = ½×40×h ⇒ h = 20√2 সেমি।","formula":"A=½ab sinC এবং A=½×বাহু×উচ্চতা","solution":"সমান বাহু 40 সেমি এবং অন্তর্ভুক্ত কোণ 45°। ক্ষেত্রফল = ½×40×40×sin45° = 400√2। ওই 40 সেমি বাহুর ওপর উচ্চতা h হলে 400√2 = ½×40×h ⇒ h = 20√2 সেমি।","english":"An isosceles triangle has two equal sides of 40 cm each, and the angle between them is 45°. What is the altitude to either equal side?","kind":"Triangle Mathematics","short":"h = অন্য বাহু × sin45° = 40×√2/2 = 20√2 সেমি।"},{"orig":27,"id":27,"text":"ভূমি 15, উচ্চতা 12। দ্বিগুণ ক্ষেত্রফলের ত্রিভুজের ভূমি 20 হলে উচ্চতা?","options":["9","18","8","12.5"],"answer":"B","explanation":"সূত্র (Formula): A₁=bh/2; A₂=2A₁. সমাধান: A₁=90, A₂=180; h=2×180/20=18.","formula":"A₁=bh/2; A₂=2A₁","solution":"A₁=90, A₂=180; h=2×180/20=18","english":"A triangle has a base of 15 cm and a height of 12 cm. A second triangle has twice its area and a base of 20 cm. What is the height of the second triangle? [SSC CGL Exam 2002]","kind":"Triangle Mathematics"},{"orig":28,"id":28,"text":"সমবাহু ত্রিভুজের অভ্যন্তরীণ বিন্দু থেকে বাহুগুলিতে লম্ব √3, 2√3, 5√3। পরিসীমা?","options":["24","64","48","32"],"answer":"C","explanation":"সূত্র (Formula): সমবাহু ত্রিভুজে তিন লম্বের যোগ=উচ্চতা. সমাধান: যোগ=8√3; উচ্চতা=8√3; বাহু=16; পরিসীমা=48.","formula":"সমবাহু ত্রিভুজে তিন লম্বের যোগ=উচ্চতা","solution":"যোগ=8√3; উচ্চতা=8√3; বাহু=16; পরিসীমা=48","english":"The perpendicular distances from an interior point of an equilateral triangle to its three opposite sides are √3 cm, 2√3 cm and 5√3 cm. What is the perimeter of the triangle? [SSC CGL Tier-I, 2023]","kind":"Triangle Mathematics"},{"orig":29,"id":29,"text":"সমবাহু ত্রিভুজে অন্তর্বিন্দু থেকে বাহুগুলির লম্ব 3,7,5 সেমি। ক্ষেত্রফল?","options":["75√3","75","75/√2","37√2"],"answer":"A","explanation":"সূত্র (Formula): লম্বগুলির যোগ=উচ্চতা; A=√3h²/3. সমাধান: উচ্চতা=15; বাহু=10√3; ক্ষেত্রফল=75√3.","formula":"লম্বগুলির যোগ=উচ্চতা; A=√3h²/3","solution":"উচ্চতা=15; বাহু=10√3; ক্ষেত্রফল=75√3","english":"The perpendicular distances from an interior point of an equilateral triangle to its three sides are 3 cm, 7 cm and 5 cm. What is the area of the triangle in cm²?","kind":"Triangle Mathematics"},{"orig":30,"id":30,"text":"সমবাহু ত্রিভুজে অন্তর্বিন্দু থেকে লম্ব p,q,r; বাহু a। সঠিক সম্পর্ক?","options":["a²=4(p+q+r)²","3a²=4(p+q+r)²","a²=(p+q+r)²","3a²=(p+q+r)²"],"answer":"B","explanation":"সূত্র (Formula): p+q+r=ত্রিভুজের উচ্চতা=√3a/2. সমাধান: 3a²=4(p+q+r)².","formula":"p+q+r=ত্রিভুজের উচ্চতা=√3a/2","solution":"3a²=4(p+q+r)²","english":"The perpendicular distances from an interior point of an equilateral triangle to its opposite sides are p cm, q cm and r cm. If each side of the triangle is a cm, which of the following is correct? [SSC CGL Tier-II Exam 2015]","kind":"Triangle Mathematics"},{"orig":31,"id":31,"text":"সমকোণী ত্রিভুজের অতিভুজ 39 সেমি, দুই লম্ব বাহুর অন্তর 21। ক্ষেত্রফল?","options":["180","590","270","450"],"answer":"C","explanation":"সূত্র (Formula): x²+y²=39²; x−y=21. সমাধান: x+y=√(2×1521−441)=√2601=51; xy=(51²−21²)/4=540; ক্ষেত্রফল=270. সঠিক বিকল্প: C.","formula":"x²+y²=39²; x−y=21","solution":"x+y=√(2×1521−441)=√2601=51; xy=(51²−21²)/4=540; ক্ষেত্রফল=270","english":"The hypotenuse of a right-angled triangle is 39 cm, and the difference between its two perpendicular sides is 21 cm. What is its area in cm²?","kind":"Triangle Mathematics"},{"orig":32,"id":32,"text":"ঝড়ে গাছ 15 মিটার উচ্চতায় মচকে, গোড়া থেকে 8 মিটার দূরে মাটি ছোঁয়। গাছের উচ্চতা?","options":["12","32","16","10"],"answer":"B","explanation":"সূত্র (Formula): ভাঙা অংশ=√(15²+8²). সমাধান: ভাঙা অংশ=17; মোট উচ্চতা=15+17=32 মিটার.","formula":"ভাঙা অংশ=√(15²+8²)","solution":"ভাঙা অংশ=17; মোট উচ্চতা=15+17=32 মিটার","english":"A tree breaks at a height of 15 metres during a storm, and its top touches the ground 8 metres from the base. What was the original height of the tree in metres?","kind":"Triangle Mathematics"},{"orig":33,"id":33,"text":"4,5,3 সেমি বাহুর ত্রিভুজে অন্তর্লিখিত বৃহত্তম বর্গের ক্ষেত্রফল?","options":["12/7","144/21","49/144","144/49"],"answer":"D","explanation":"4, 5, 3 বাহুর ত্রিভুজটি সমকোণী; ক্ষেত্রফল = ½×3×4 = 6। বৃহত্তম অন্তর্লিখিত বর্গের এক বাহু x হলে, ভিত্তির সমান্তরালতার কারণে x = bh/(b+h) = (3×4)/(3+4) = 12/7। ক্ষেত্রফল = x² = 144/49 বর্গসেমি।","formula":"ত্রিভুজের ক্ষেত্রফল 6; অর্ধপরিসীমা 6; r= A/s=1","solution":"4, 5, 3 বাহুর ত্রিভুজটি সমকোণী; ক্ষেত্রফল = ½×3×4 = 6। বৃহত্তম অন্তর্লিখিত বর্গের এক বাহু x হলে, ভিত্তির সমান্তরালতার কারণে x = bh/(b+h) = (3×4)/(3+4) = 12/7। ক্ষেত্রফল = x² = 144/49 বর্গসেমি।","english":"What is the area, in cm², of the largest square that can be inscribed inside a triangle with sides 4 cm, 5 cm and 3 cm?","kind":"Triangle Mathematics","short":"Largest square side = bh/(b+h) = 12/7; area = (12/7)² = 144/49।"},{"orig":34,"id":34,"text":"সমবাহু ত্রিভুজের প্রতিটি বাহু 34% বাড়লে ক্ষেত্রফল কত % বাড়ে?","options":["70.65","79.56","68.25","75.15"],"answer":"B","explanation":"প্রতিটি বাহু 34% বাড়লে নতুন বাহু = 1.34a। ক্ষেত্রফলের অনুপাত = (1.34)² = 1.7956। বৃদ্ধি = (1.7956−1)×100% = 79.56%。","formula":"ক্ষেত্রফল বাহুর বর্গের সমানুপাতিক","solution":"প্রতিটি বাহু 34% বাড়লে নতুন বাহু = 1.34a। ক্ষেত্রফলের অনুপাত = (1.34)² = 1.7956। বৃদ্ধি = (1.7956−1)×100% = 79.56%。","english":"If each side of an equilateral triangle is increased by 34%, by what percentage does its area increase? [SSC CGL Tier-I, 2023]","kind":"Triangle Mathematics","short":"Area change = (1.34²−1)×100% = 79.56% increase."},{"orig":35,"id":35,"text":"ত্রিভুজের প্রতিটি বাহু 20% কমলে ক্ষেত্রফল কত কমে?","options":["10%","35%","36%","20%"],"answer":"C","explanation":"সূত্র (Formula): নতুন ক্ষেত্রফল=(0.8)². সমাধান: হ্রাস=1−0.64=36%.","formula":"নতুন ক্ষেত্রফল=(0.8)²","solution":"হ্রাস=1−0.64=36%","english":"If each side of a triangle is reduced by 20%, by what percentage does its area decrease?","kind":"Triangle Mathematics"},{"orig":36,"id":36,"text":"উচ্চতা 10% বাড়লে ক্ষেত্রফল অপরিবর্তিত রাখতে ভূমি কত কমাতে হবে?","options":["10%","11%","11 1/9%","9 1/11%"],"answer":"D","explanation":"সূত্র (Formula): b₁h₁=b₂h₂. সমাধান: নতুন ভূমি=1/1.1=10/11; হ্রাস=1/11=9 1/11%. সঠিক বিকল্প: D.","formula":"b₁h₁=b₂h₂","solution":"নতুন ভূমি=1/1.1=10/11; হ্রাস=1/11=9 1/11%","english":"If the height of a triangle increases by 10%, by what percentage must its base decrease to keep the area unchanged? [SSC CGL Tier-I, 2023]","kind":"Triangle Mathematics"},{"orig":37,"id":37,"text":"ভূমি 20% কমলে ক্ষেত্রফল একই রাখতে উচ্চতা কত বাড়াতে হবে?","options":["40%","25%","20%","10%"],"answer":"B","explanation":"সূত্র (Formula): b₁h₁=b₂h₂. সমাধান: নতুন উচ্চতা=1/0.8=1.25; বৃদ্ধি=25%.","formula":"b₁h₁=b₂h₂","solution":"নতুন উচ্চতা=1/0.8=1.25; বৃদ্ধি=25%","english":"If the base of a triangle decreases by 20%, by what percentage must its height increase to keep the area unchanged?","kind":"Triangle Mathematics"},{"orig":38,"id":38,"text":"ভূমি 20% ও উচ্চতা 30% বাড়লে ক্ষেত্রফল কত বাড়ে?","options":["40%","60%","56%","55%"],"answer":"C","explanation":"সূত্র (Formula): ক্ষেত্রফল গুণক=1.2×1.3. সমাধান: 1.56−1=56%.","formula":"ক্ষেত্রফল গুণক=1.2×1.3","solution":"1.56−1=56%","english":"If the base of a triangle increases by 20% and its height increases by 30%, by what percentage does its area increase?","kind":"Triangle Mathematics"},{"orig":39,"id":39,"text":"ভূমি 20% বাড়ে, উচ্চতা 30% কমে। ক্ষেত্রফল?","options":["15% বৃদ্ধি","15% হ্রাস","16% বৃদ্ধি","16% হ্রাস"],"answer":"D","explanation":"সূত্র (Formula): নতুন ক্ষেত্রফল গুণক=1.2×0.7. সমাধান: 0.84; অর্থাৎ 16% হ্রাস.","formula":"নতুন ক্ষেত্রফল গুণক=1.2×0.7","solution":"0.84; অর্থাৎ 16% হ্রাস","english":"If the base of a triangle increases by 20% and its height decreases by 30%, what is the percentage increase or decrease in its area?","kind":"Triangle Mathematics"},{"orig":40,"id":40,"text":"ভূমি 30% বাড়ে, উচ্চতা 20% কমে। ক্ষেত্রফল?","options":["5% হ্রাস","5% বৃদ্ধি","4% বৃদ্ধি","4% হ্রাস"],"answer":"C","explanation":"সূত্র (Formula): 1.3×0.8=1.04. সমাধান: ক্ষেত্রফল 4% বৃদ্ধি. সঠিক বিকল্প: C.","formula":"1.3×0.8=1.04","solution":"ক্ষেত্রফল 4% বৃদ্ধি","english":"If the base of a triangle increases by 30% and its height decreases by 20%, what is the percentage increase or decrease in its area?","kind":"Triangle Mathematics"},{"orig":41,"id":41,"text":"ভূমি ও উচ্চতা যথাক্রমে 30%,20% কমলে ক্ষেত্রফল কত কমে?","options":["40%","44%","42%","60%"],"answer":"B","explanation":"সূত্র (Formula): নতুন ক্ষেত্রফল=0.7×0.8. সমাধান: 0.56; হ্রাস=44%.","formula":"নতুন ক্ষেত্রফল=0.7×0.8","solution":"0.56; হ্রাস=44%","english":"If both the base and height of a triangle decrease by 30% and 20%, respectively, by what percentage does its area decrease?","kind":"Triangle Mathematics"},{"orig":42,"id":42,"text":"ভূমি:উচ্চতা=3:4, ক্ষেত্রফল 1176। উচ্চতা?","options":["42","52","54","56"],"answer":"D","explanation":"ভূমি:উচ্চতা = 3:4 হলে ভূমি = 3x, উচ্চতা = 4x। ক্ষেত্রফল = ½×3x×4x = 6x² = 1176 ⇒ x² = 196 ⇒ x = 14। উচ্চতা = 4x = 56 সেমি।","formula":"A=bh/2; b=3x,h=4x","solution":"ভূমি:উচ্চতা = 3:4 হলে ভূমি = 3x, উচ্চতা = 4x। ক্ষেত্রফল = ½×3x×4x = 6x² = 1176 ⇒ x² = 196 ⇒ x = 14। উচ্চতা = 4x = 56 সেমি।","english":"The ratio of the base to the height of a triangle is 3 : 4, and its area is 1176 cm². What is its height? [SSC CGL Exam 2000]","kind":"Triangle Mathematics","short":"6x² = 1176 ⇒ x = 14; height = 4x = 56 cm."},{"orig":43,"id":43,"text":"বর্গ ও সমবাহু ত্রিভুজের পরিসীমা সমান; ত্রিভুজের ক্ষেত্রফল 16√3। বর্গের বাহু?","options":["4","4√2","6√2","6"],"answer":"D","explanation":"সূত্র (Formula): A=√3a²/4. সমাধান: a=8; পরিসীমা=24; বর্গের বাহু=6. সঠিক বিকল্প: D.","formula":"A=√3a²/4","solution":"a=8; পরিসীমা=24; বর্গের বাহু=6","english":"A square and an equilateral triangle have equal perimeters. If the area of the equilateral triangle is 16√3 cm², what is the side of the square? [CDS 1999]","kind":"Triangle Mathematics"},{"orig":44,"id":44,"text":"6 সেমি বাহুর বর্গের ক্ষেত্রফলের সমান ত্রিভুজের ভূমি 6 সেমি। উচ্চতা?","options":["6","9","12","15"],"answer":"C","explanation":"সূত্র (Formula): Aবর্গ=36; h=2A/b. সমাধান: h=72/6=12 সেমি.","formula":"Aবর্গ=36; h=2A/b","solution":"h=72/6=12 সেমি","english":"The area of a square of side 6 cm is equal to the area of a triangle. If one side of the triangle is 6 cm, what is the altitude to that side? [CDS 1998]","kind":"Triangle Mathematics"},{"orig":45,"id":45,"text":"সমকোণী ত্রিভুজের অতিভুজ 5 সেমি, ক্ষেত্রফল 6। অন্য দুই বাহু?","options":["1,3","3,2","4,2","3,4"],"answer":"D","explanation":"সূত্র (Formula): xy=12, x²+y²=25. সমাধান: (3,4) জোড়ায় গুণফল 12 ও বর্গসমষ্টি 25. সঠিক বিকল্প: D.","formula":"xy=12, x²+y²=25","solution":"(3,4) জোড়ায় গুণফল 12 ও বর্গসমষ্টি 25","english":"A right-angled triangle has a hypotenuse of 5 cm and an area of 6 cm². What are the lengths of its other two sides? [CDS 2001]","kind":"Triangle Mathematics"},{"orig":46,"id":46,"text":"10মি ও 15মি স্তম্ভের দূরত্ব 12মি; শীর্ষের দূরত্ব?","options":["13","12","12.5","13.5"],"answer":"A","explanation":"স্তম্ভের উচ্চতার পার্থক্য = 15−10 = 5 মিটার। শীর্ষবিন্দু দুটির সংযোগরেখা সমকোণী ত্রিভুজের অতিভুজ। দূরত্ব = √(12²+5²) = √169 = 13 মিটার।","formula":"d=√(অনুভূমিক²+উচ্চতার পার্থক্য²)","solution":"স্তম্ভের উচ্চতার পার্থক্য = 15−10 = 5 মিটার। শীর্ষবিন্দু দুটির সংযোগরেখা সমকোণী ত্রিভুজের অতিভুজ। দূরত্ব = √(12²+5²) = √169 = 13 মিটার।","english":"Two vertical pillars, 10 metres and 15 metres high, are 12 metres apart. What is the distance between their top ends? [RRB Malda 2007]","kind":"Triangle Mathematics","short":"Use the 5–12–13 right triangle: distance = 13 m."},{"orig":47,"id":47,"text":"পরিসীমা 18, বাহুর অনুপাত 2:3:4। ক্ষেত্রফল?","options":["9","36","√42","3√15"],"answer":"D","explanation":"পরিসীমা 18 এবং বাহুর অনুপাত 2:3:4। মোট অনুপাত 9, তাই বাহুগুলি 4, 6, 8 সেমি। s = 9। Heron সূত্রে A = √[9×5×3×1] = √135 = 3√15 বর্গসেমি।","formula":"Heron সূত্র","solution":"পরিসীমা 18 এবং বাহুর অনুপাত 2:3:4। মোট অনুপাত 9, তাই বাহুগুলি 4, 6, 8 সেমি। s = 9। Heron সূত্রে A = √[9×5×3×1] = √135 = 3√15 বর্গসেমি।","english":"The perimeter of a triangle is 18 cm, and the ratio of its three sides is 2 : 3 : 4. What is its area in cm²? [SSC CGL Tier-I Exam 2011]","kind":"Triangle Mathematics","short":"Sides are 4, 6, 8; Heron gives √135 = 3√15 cm²."},{"orig":48,"id":48,"text":"পরিসীমা 40, ক্ষেত্রফল 60, বৃহত্তম বাহু 17। ক্ষুদ্রতম বাহু?","options":["4","6","8","15"],"answer":"C","explanation":"বৃহত্তম বাহু 17 এবং পরিসীমা 40, তাই বাকি দুই বাহুর যোগ 23। Heron সূত্রে s = 20, 60² = 20×3×(20−a)(20−b), ফলে (20−a)(20−b)=60। a+b=23 থেকে ab=120; তাই বাহু দুটি 8 ও 15। ক্ষুদ্রতম বাহু 8 সেমি।","formula":"ধরি অন্য বাহু x, y; x+y=23","solution":"বৃহত্তম বাহু 17 এবং পরিসীমা 40, তাই বাকি দুই বাহুর যোগ 23। Heron সূত্রে s = 20, 60² = 20×3×(20−a)(20−b), ফলে (20−a)(20−b)=60। a+b=23 থেকে ab=120; তাই বাহু দুটি 8 ও 15। ক্ষুদ্রতম বাহু 8 সেমি।","english":"The perimeter of a triangle is 40 cm and its area is 60 cm². If its longest side is 17 cm, what is the length of its shortest side? [SSC CGL Tier-I Exam 2011]","kind":"Triangle Mathematics","short":"The two remaining sides have sum 23 and product 120; they are 8 and 15, so the smallest is 8 cm."},{"orig":49,"id":49,"text":"সমকোণী ত্রিভুজে ক্ষুদ্রতম বাহু বর্গের বাহু থেকে 8 কম (পরিসীমা 56); মধ্যম বাহু আয়তক্ষেত্রের দৈর্ঘ্য থেকে 4 কম (ক্ষেত্রফল 96, প্রস্থ 8)। বৃহত্তম বাহু?","options":["20","12","10","15"],"answer":"C","explanation":"সূত্র (Formula): বর্গের বাহু=56/4=14; ক্ষুদ্রতম=6; আয়তক্ষেত্রের দৈর্ঘ্য=12, মধ্যম=8. সমাধান: 6²+8²=10²; বৃহত্তम বাহু 10; তবে শর্তে মধ্যম 8, বৃহত্তম 10 ⇒ বিকল্প 3.","formula":"বর্গের বাহু=56/4=14; ক্ষুদ্রতম=6; আয়তক্ষেত্রের দৈর্ঘ্য=12, মধ্যম=8","solution":"6²+8²=10²; বৃহত্তम বাহু 10; তবে শর্তে মধ্যম 8, বৃহত্তম 10 ⇒ বিকল্প 3","english":"The shortest side of a right-angled triangle is 8 cm shorter than the side of a square whose perimeter is 56 cm. The middle side of the triangle is 4 cm shorter than the length of a rectangle whose area is 96 cm². If the rectangle's width is 8 cm, what is the longest side of the triangle? [Indian Overseas Bank PO, 2011]","kind":"Triangle Mathematics"},{"orig":50,"id":50,"text":"15,20,25 મি বাহুর ত্রিভুজে প্রতি বর্গমিটারে 5 টাকা চারা লাগাতে খরচ?","options":["300","600","750","150"],"answer":"C","explanation":"সূত্র (Formula): সমকোণী ক্ষেত্রফল=½×15×20. সমাধান: ক্ষেত্রফল=150; খরচ=150×5=750 টাকা. সঠিক বিকল্প: C.","formula":"সমকোণী ক্ষেত্রফল=½×15×20","solution":"ক্ষেত্রফল=150; খরচ=150×5=750 টাকা","english":"A triangular field has sides of 15 m, 20 m and 25 m. What is the cost of planting paddy seedlings at ₹5 per square metre? [SSC CGL Tier-I Exam 2013]","kind":"Triangle Mathematics"},{"orig":51,"id":51,"text":"সমবাহু ত্রিভুজের উচ্চতা 3.46 সেমি (√3=1.73)। পরিসীমা?","options":["10.4","9","12","6"],"answer":"C","explanation":"সমবাহু ত্রিভুজের উচ্চতা h = (√3/2)a। 3.46 = (1.73/2)a ⇒ a = 4 সেমি। পরিসীমা = 3a = 12 সেমি।","formula":"h=√3a/2","solution":"সমবাহু ত্রিভুজের উচ্চতা h = (√3/2)a। 3.46 = (1.73/2)a ⇒ a = 4 সেমি। পরিসীমা = 3a = 12 সেমি।","english":"The height of an equilateral triangle is 3.46 cm. What is its perimeter? Take √3 = 1.73. [SSC CHSL (10+2) Tier-I Exam 2021]","kind":"Triangle Mathematics","short":"a = 2h/√3 = 2×3.46/1.73 = 4; perimeter = 12 cm."},{"orig":52,"id":52,"text":"অর্ধবৃত্তে ∠ACB, AB=5 সেমি, AC:BC=3:4। ক্ষেত্রফল?","options":["6√2","4","12","6"],"answer":"D","explanation":"অর্ধবৃত্তে উৎপন্ন কোণ 90°, তাই AB = 5 সেমি অতিভুজ। AC:BC = 3:4 বলে বাহুগুলি 3k, 4k, 5k; 5k = 5 ⇒ k = 1। ক্ষেত্রফল = ½×3×4 = 6 বর্গসেমি।","formula":"অর্ধবৃত্তে অন্তর্লিখিত কোণ 90°; 3:4:5 অনুপাত","solution":"অর্ধবৃত্তে উৎপন্ন কোণ 90°, তাই AB = 5 সেমি অতিভুজ। AC:BC = 3:4 বলে বাহুগুলি 3k, 4k, 5k; 5k = 5 ⇒ k = 1। ক্ষেত্রফল = ½×3×4 = 6 বর্গসেমি।","english":"Angle ACB is subtended by a diameter of a semicircle. If AB = 5 cm and AC : BC = 3 : 4, what is the area of the triangle in cm²? [SSC CGL Tier-I Exam 2014]","kind":"Triangle Mathematics","short":"3–4–5 triangle; area = ½×3×4 = 6 cm²."},{"orig":53,"id":53,"text":"BC-এর ওপর D, BD:DC=4:5; ক্ষেত্রফল ABD=60। ADC ক্ষেত্রফল?","options":["90","50","60","75"],"answer":"D","explanation":"ABD ও ADC ত্রিভুজের একই উচ্চতা BC-এর ওপর, তাই ক্ষেত্রফলের অনুপাত = BD:DC = 4:5। ABD-এর ক্ষেত্রফল 60 হলে ADC = 60×5/4 = 75 বর্গসেমি।","formula":"একই উচ্চতা হলে ক্ষেত্রফল ভূমির অনুপাতের সমান","solution":"ABD ও ADC ত্রিভুজের একই উচ্চতা BC-এর ওপর, তাই ক্ষেত্রফলের অনুপাত = BD:DC = 4:5। ABD-এর ক্ষেত্রফল 60 হলে ADC = 60×5/4 = 75 বর্গসেমি।","english":"Point D lies on side BC of triangle ABC such that BD : DC = 4 : 5. If the area of triangle ABD is 60 cm², what is the area of triangle ADC? [SSC CGL Tier-I Exam 2015]","kind":"Triangle Mathematics","short":"Same altitude means area ratio 4:5; 60×5/4 = 75 cm²."},{"orig":54,"id":54,"text":"জাহাজ দক্ষিণে 12 কিমি, তারপর পূর্বে 5 কিমি। সরল দূরত্ব?","options":["11","18","15","13"],"answer":"D","explanation":"সূত্র (Formula): পিথাগোরাস. সমাধান: √(12²+5²)=13 কিমি.","formula":"পিথাগোরাস","solution":"√(12²+5²)=13 কিমি","english":"A ship travels 12 km south and then 5 km east. How far is it from its starting point? [SSC CGL Tier-I, 2015]","kind":"Triangle Mathematics"},{"orig":55,"id":55,"text":"ক্ষেত্রফল 480, বাহুর অনুপাত 10:24:26। পরিসীমা?","options":["120","60","150","30"],"answer":"A","explanation":"বাহুগুলি 10k, 24k, 26k এবং পরিসীমা 60k = 120? প্রদত্ত ক্ষেত্রফল 480 থেকে সমকোণী ক্ষেত্রফল ½×10k×24k = 120k² = 480 ⇒ k = 2। পরিসীমা = 60k = 120 সেমি।","formula":"অনুপাত 5:12:13 সমকোণী; ক্ষেত্রফল=30k²","solution":"বাহুগুলি 10k, 24k, 26k এবং পরিসীমা 60k = 120? প্রদত্ত ক্ষেত্রফল 480 থেকে সমকোণী ক্ষেত্রফল ½×10k×24k = 120k² = 480 ⇒ k = 2। পরিসীমা = 60k = 120 সেমি।","english":"A triangle has area 480 cm² and its sides are in the ratio 10 : 24 : 26. What is its perimeter in centimetres? [SSC CGL Tier-I Exam 2022]","kind":"Triangle Mathematics","short":"Right triangle area = ½×10k×24k = 120k² = 480 ⇒ k=2; perimeter=120 cm."},{"orig":56,"id":56,"text":"12মি ও 7মি স্তম্ভের দূরত্ব 12মি। শীর্ষের দূরত্ব?","options":["15","13","19","17"],"answer":"B","explanation":"উচ্চতার পার্থক্য = 12−7 = 5 মিটার। অনুভূমিক দূরত্ব 12 মিটার। শীর্ষবিন্দুর দূরত্ব = √(12²+5²) = 13 মিটার।","formula":"d=√(12²+5²)","solution":"উচ্চতার পার্থক্য = 12−7 = 5 মিটার। অনুভূমিক দূরত্ব 12 মিটার। শীর্ষবিন্দুর দূরত্ব = √(12²+5²) = 13 মিটার।","english":"Two pillars, 12 metres and 7 metres high, are 12 metres apart. What is the distance between their top ends? [SSC CGL Tier-I Exam 2015]","kind":"Triangle Mathematics","short":"5–12–13 right triangle ⇒ 13 m."},{"orig":57,"id":57,"text":"ত্রিভুজের কোণের অনুপাত 2:3:5। ত্রিভুজটি?","options":["সমকোণী","সমবাহু","বিষমবাহু","সমদ্বিবাহু"],"answer":"A","explanation":"সূত্র (Formula): কোণের যোগ 180°. সমাধান: প্রতি অংশ=18°; কোণ 36°,54°,90°; সমকোণী.","formula":"কোণের যোগ 180°","solution":"প্রতি অংশ=18°; কোণ 36°,54°,90°; সমকোণী","english":"The ratio of the three angles of a triangle is 2 : 3 : 5. What type of triangle is it? [SSC CGL Tier-I Exam 2015]","kind":"Triangle Mathematics"},{"orig":58,"id":58,"text":"AB=8, AC=10, ∠B=90°। ক্ষেত্রফল?","options":["49","36","25","24"],"answer":"D","explanation":"সূত্র (Formula): AC অতিভুজ; BC=√(AC²−AB²). সমাধান: BC=√(100−64)=6; ক্ষেত্রফল=½×8×6=24.","formula":"AC অতিভুজ; BC=√(AC²−AB²)","solution":"BC=√(100−64)=6; ক্ষেত্রফল=½×8×6=24","english":"In triangle ABC, AB = 8 cm, AC = 10 cm and ∠B = 90°. What is the area of triangle ABC in cm²? [SSC CGL Tier-I Exam 2016]","kind":"Triangle Mathematics"},{"orig":59,"id":59,"text":"সমবাহু ABC; D,E যথাক্রমে AB,BC-এর মধ্যবিন্দু। ক্ষেত্রফল ABC:DEC?","options":["5:3","4:1","8:5","4:3"],"answer":"B","explanation":"সূত্র (Formula): DE=AC/2; ছোট ত্রিভুজের বাহু অর্ধেক. সমাধান: ক্ষেত্রফলের অনুপাত 1:(1/4), অর্থাৎ 4:1.","formula":"DE=AC/2; ছোট ত্রিভুজের বাহু অর্ধেক","solution":"ক্ষেত্রফলের অনুপাত 1:(1/4), অর্থাৎ 4:1","english":"Triangle ABC is equilateral. D and E are the midpoints of AB and BC, respectively. What is the ratio of the area of triangle ABC to the area of triangle DEC? [SSC CGL Tier-I Exam 2016]","kind":"Triangle Mathematics"},{"orig":60,"id":60,"text":"এক বাহু 7, পরিসীমা 18, ক্ষেত্রফল √108। অন্য দুই বাহু?","options":["6,5","3.5,7.5","7,4","3,8"],"answer":"A","explanation":"সূত্র (Formula): অন্য দুই বাহুর যোগ=11; Heron. সমাধান: 6+5=11; s=9; A=√(9×2×3×4)=√216=6√6=√216, তাই প্রদত্ত √108-এর সঙ্গে মেলে না; প্রশ্নে অসংগতি.","formula":"অন্য দুই বাহুর যোগ=11; Heron","solution":"6+5=11; s=9; A=√(9×2×3×4)=√216=6√6=√216, তাই প্রদত্ত √108-এর সঙ্গে মেলে না; প্রশ্নে অসংগতি","english":"One side of a triangle is 7 units, its perimeter is 18 units, and its area is √108 square units. What are the lengths of the other two sides? [SSC CHSL (10+2) Tier-I Exam 2020]","kind":"Triangle Mathematics"},{"orig":61,"id":61,"text":"বাহু 8,15,17 সেমি। ক্ষেত্রফল?","options":["60","65","75","70"],"answer":"A","explanation":"সূত্র (Formula): সমকোণী ত্রিভুজ; 8²+15²=17². সমাধান: ক্ষেত্রফল=½×8×15=60.","formula":"সমকোণী ত্রিভুজ; 8²+15²=17²","solution":"ক্ষেত্রফল=½×8×15=60","english":"The sides of a triangle are 8 cm, 15 cm and 17 cm. What is its area in cm²? [SSC CHSL Tier-I (CBE), 2023]","kind":"Triangle Mathematics"},{"orig":62,"id":62,"text":"সমদ্বিবাহু ত্রিভুজের বাহু 10,10,12। ক্ষেত্রফল?","options":["60","48","40","44"],"answer":"B","explanation":"সূত্র (Formula): h=√(10²−6²). সমাধান: h=8; ক্ষেত্রফল=½×12×8=48.","formula":"h=√(10²−6²)","solution":"h=8; ক্ষেত্রফল=½×12×8=48","english":"The sides of an isosceles triangle are 10 cm, 10 cm and 12 cm. What is its area in cm²? [SSC MTS 2019]","kind":"Triangle Mathematics"},{"orig":63,"id":63,"text":"1 একক 12 কাঠি দিয়ে সমবাহু ত্রিভুজ বানালে ক্ষেত্রফল?","options":["4","6","8","10"],"answer":"","explanation":"12টি 1-একক কাঠি হলে পরিসীমা 12 এবং প্রতিটি বাহু 4। ক্ষেত্রফল = (√3/4)×16 = 4√3 বর্গ একক; প্রদত্ত বিকল্পে এই উত্তর নেই।","formula":"পরিসীমা=12; বাহু=4","solution":"12টি 1-একক কাঠি হলে পরিসীমা 12 এবং প্রতিটি বাহু 4। ক্ষেত্রফল = (√3/4)×16 = 4√3 বর্গ একক; প্রদত্ত বিকল্পে এই উত্তর নেই।","english":"An equilateral triangle is formed using 12 sticks, each 1 unit long. What is the area of the triangle in square units? [SSC CHSL (10+2) Tier-I Exam 2019]","kind":"Triangle Mathematics","short":"প্রথমে প্রদত্ত তথ্য ও বিকল্প মিলিয়ে দেখুন। হিসাবের সঠিক ফল কোনো বিকল্পে না থাকলে প্রশ্ন/বিকল্পে মুদ্রণভুল আছে; অনুমান করে ভুল উত্তর নির্বাচন করবেন না."},{"orig":64,"id":64,"text":"65,72,97 বাহুর ত্রিভুজের সমান ক্ষেত্রফল আয়তক্ষেত্র; বাহুর অনুপাত 5:13। পরিসীমা?","options":["108","180","216","144"],"answer":"C","explanation":"সূত্র (Formula): ত্রিভুজ সমকোণী: 65²+72²=97²?. সমাধান: ক্ষেত্রফল=½×65×72=2340; আয়তক্ষেত্রের বাহু 5x,13x; 65x²=2340 ⇒ x=6; পরিসীমা=216. সঠিক বিকল্প: C.","formula":"ত্রিভুজ সমকোণী: 65²+72²=97²?","solution":"ক্ষেত্রফল=½×65×72=2340; আয়তক্ষেত্রের বাহু 5x,13x; 65x²=2340 ⇒ x=6; পরিসীমা=216","english":"A triangle with sides 65 m, 72 m and 97 m has the same area as a rectangle whose sides are in the ratio 5 : 13. What is the perimeter of the rectangle in metres? [SSC CHSL (10+2) Tier-I Exam 2021]","kind":"Triangle Mathematics"},{"orig":65,"id":65,"text":"সমদ্বিবাহু ত্রিভুজের পরিসীমা 64, ভূমির ওপর উচ্চতা 8। ক্ষেত্রফল?","options":["180","120","360","240"],"answer":"B","explanation":"সমান বাহু a ও ভূমি b ধরি। 2a+b=64 এবং h=8। সমদ্বিবাহু ত্রিভুজে a²=8²+(b/2)²। a=(64−b)/2 বসালে (64−b)²/4=64+b²/4 ⇒ 4096−128b+b²=256+b² ⇒ b=30, a=17। ক্ষেত্রফল = ½×30×8 = 120 বর্গসেমি।","formula":"2a+b=64; h=8; a²=8²+(b/2)²","solution":"সমান বাহু a ও ভূমি b ধরি। 2a+b=64 এবং h=8। সমদ্বিবাহু ত্রিভুজে a²=8²+(b/2)²। a=(64−b)/2 বসালে (64−b)²/4=64+b²/4 ⇒ 4096−128b+b²=256+b² ⇒ b=30, a=17। ক্ষেত্রফল = ½×30×8 = 120 বর্গসেমি।","english":"The perimeter of an isosceles triangle is 64 cm, and its altitude to the unequal side is 8 cm. What is its area? [SSC CGL Tier-I, 2023]","kind":"Triangle Mathematics","short":"a=(64−b)/2 এবং a²=64+b²/4; সমাধানে b=30। ক্ষেত্রফল = ½×30×8 = 120 বর্গসেমি।"},{"orig":66,"id":66,"text":"বাহু 21,20,29 সেমি। ক্ষেত্রফল?","options":["290","200","190","210"],"answer":"D","explanation":"সূত্র (Formula): 20²+21²=29². সমাধান: ক্ষেত্রফল=½×20×21=210.","formula":"20²+21²=29²","solution":"ক্ষেত্রফল=½×20×21=210","english":"The sides of a triangle are 21 cm, 20 cm and 29 cm. What is its area in cm²? [SSC MTS Exam 2022]","kind":"Triangle Mathematics"},{"orig":67,"id":67,"text":"সমকোণী ত্রিভুজের অতিভুজ 37, অন্য বাহু 12। ক্ষেত্রফল?","options":["222","204","216","210"],"answer":"D","explanation":"সূত্র (Formula): অন্য বাহু=√(37²−12²). সমাধান: অন্য বাহু=√(1369−144)=35; ক্ষেত্রফল=½×12×35=210, বিকল্প 4. সঠিক বিকল্প: D.","formula":"অন্য বাহু=√(37²−12²)","solution":"অন্য বাহু=√(1369−144)=35; ক্ষেত্রফল=½×12×35=210, বিকল্প 4","english":"The hypotenuse of a right-angled triangle is 37 cm and one other side is 12 cm. What is its area in cm²? [SSC CHSL Tier-I (CBE), 2022]","kind":"Triangle Mathematics"},{"orig":68,"id":68,"text":"বাহুর অনুপাত 5:12:13, পরিসীমা 90। ক্ষেত্রফল?","options":["270","150","60","30"],"answer":"A","explanation":"সূত্র (Formula): 30k=90 ⇒ k=3; সমকোণী. সমাধান: বাহু 15,36,39; ক্ষেত্রফল=½×15×36=270.","formula":"30k=90 ⇒ k=3; সমকোণী","solution":"বাহু 15,36,39; ক্ষেত্রফল=½×15×36=270","english":"The sides of a triangle are in the ratio 5 : 12 : 13 and its perimeter is 90 cm. What is its area in cm²? [SSC CPO Exam 2023]","kind":"Triangle Mathematics"},{"orig":69,"id":69,"text":"সমকোণী ত্রিভুজের অতিভুজ 29, অন্য দুই বাহুর যোগ 41। তাদের অন্তর?","options":["10","2","5","1"],"answer":"D","explanation":"সূত্র (Formula): x²+y²=29²; (x+y)²=x²+y²+2xy. সমাধান: xy=(1681−841)/2=420; (x−y)²=841−840=1; অন্তর=1; বিকল্প 4. সঠিক বিকল্প: D.","formula":"x²+y²=29²; (x+y)²=x²+y²+2xy","solution":"xy=(1681−841)/2=420; (x−y)²=841−840=1; অন্তর=1; বিকল্প 4","english":"The hypotenuse of a right-angled triangle is 29 cm, and the sum of the other two sides is 41 cm. What is the difference between those two sides? [SSC CPO Exam 2023]","kind":"Triangle Mathematics"},{"orig":70,"id":70,"text":"সমকোণী সমদ্বিবাহু ত্রিভুজের ক্ষেত্রফল 50। অতিভুজ?","options":["5√2","10√2","10√3","5√5"],"answer":"B","explanation":"সূত্র (Formula): A=a²/2; c=a√2. সমাধান: a²=100 ⇒ a=10; c=10√2.","formula":"A=a²/2; c=a√2","solution":"a²=100 ⇒ a=10; c=10√2","english":"The area of a right-angled isosceles triangle is 50 square units. What is the length of its hypotenuse? [SSC CGL Tier-I, 2024]","kind":"Triangle Mathematics"},{"orig":71,"id":71,"text":"সমবাহু ত্রিভুজের পরিসীমা 36। ক্ষেত্রফল?","options":["144/√3","36/√3","144/√2","36√2"],"answer":"","explanation":"পরিসীমা 36 হলে প্রতিটি বাহু 12। ক্ষেত্রফল = (√3/4)×12² = 36√3 = 108/√3 বর্গ একক; প্রদত্ত বিকল্পে এই সমতুল্য মান নেই।","formula":"a=36/3=12; A=√3a²/4","solution":"পরিসীমা 36 হলে প্রতিটি বাহু 12। ক্ষেত্রফল = (√3/4)×12² = 36√3 = 108/√3 বর্গ একক; প্রদত্ত বিকল্পে এই সমতুল্য মান নেই।","english":"The perimeter of an equilateral triangle is 36 units. What is its area in square units? [SSC CGL Tier-I, 2024]","kind":"Triangle Mathematics","short":"প্রথমে প্রদত্ত তথ্য ও বিকল্প মিলিয়ে দেখুন। হিসাবের সঠিক ফল কোনো বিকল্পে না থাকলে প্রশ্ন/বিকল্পে মুদ্রণভুল আছে; অনুমান করে ভুল উত্তর নির্বাচন করবেন না."}]
+let DURATION=75*60;
+const DEFAULT_DURATION_SECONDS=75*60;
+const ADMIN_PASSWORD="Bikash@420";
+const RESULTS_KEY="wb_primary_tet_mock_test_150q_v1";
+const CENTRAL_SCOREBOARD_URL="https://script.google.com/macros/s/AKfycby_4CKFXC9kKnNZbUE_BWLQBPQlH44kOzR1CpNhfHKNL5AO2Kj5JAeVyRymPeFldVM/exec";
+const CENTRAL_API_TOKEN="CTET_SCOREBOARD_2026_BIKAS_420";
+const CENTRAL_ADMIN_CACHE_KEY="geo_central_scoreboard_admin_cache_v1";
+
+let candidate="",idx=0,answers={},startAt=0,examStartAt=null,timerHandle=null,submitted=false,warningGiven=false;
+let revisionMode=false,revisionQuestions=[],revisionAnswers={},revisionStartAt=0,revisionTimerHandle=null,revisionSubmitted=false,mainResult=null;
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
+const letter=i=>String.fromCharCode(65+i);
+const answerIndex=L=>L.charCodeAt(0)-65;
+
+function getResults(){try{return JSON.parse(localStorage.getItem(RESULTS_KEY)||"[]")}catch(e){return[]}}
+function saveResults(a){localStorage.setItem(RESULTS_KEY,JSON.stringify(a))}
+
+
+function showCentralStatus(message, good=false){
+  let el=document.getElementById("centralStatusToast");
+  if(!el){
+    el=document.createElement("div");
+    el.id="centralStatusToast";
+    el.style.cssText="position:fixed;left:12px;right:12px;bottom:14px;z-index:3000;padding:12px 14px;border-radius:12px;font-weight:900;font-size:13px;text-align:center;box-shadow:0 8px 28px rgba(0,0,0,.35);";
+    document.body.appendChild(el);
+  }
+  el.textContent=message;
+  el.style.background=good?"#123e23":"#470b17";
+  el.style.color=good?"#70ff9f":"#ff91a4";
+  el.style.border="1px solid "+(good?"#18e76b":"#ff3152");
+  el.style.display="block";
+  clearTimeout(window.__centralStatusTimer);
+  window.__centralStatusTimer=setTimeout(()=>{if(el)el.style.display="none";},9000);
+}
+
+function submitToCentralScoreboard(r){
+  const payload={
+    action:"submit",
+    token:CENTRAL_API_TOKEN,
+    submissionId:String(r.id||("TET-"+Date.now()+"-"+Math.random().toString(36).slice(2))),
+    testTitle:TEST_TITLE,
+    candidateName:String(r.candidate||"").trim(),
+    score:Number(r.score)||0,
+    percentage:Number(r.percentage)||0,
+    timeUsedSeconds:Number(r.timeUsed)||0,
+    examStart:r.startExam||examStartAt||"",
+    examEnd:r.completedAt||new Date().toISOString()
+  };
+  // Submit silently in the background; do not interrupt the candidate with scoreboard messages.
+  return fetch(CENTRAL_SCOREBOARD_URL,{
+    method:"POST",
+    mode:"no-cors",
+    redirect:"follow",
+    credentials:"omit",
+    headers:{"Content-Type":"text/plain;charset=UTF-8"},
+    body:JSON.stringify(payload),
+    keepalive:true
+  }).then(()=>{
+    return true;
+  }).catch(()=>{
+    return false;
+  });
+}
+
+let audioCtx=null;
+function ensureAudio(){try{const C=window.AudioContext||window.webkitAudioContext;if(!C)return null;if(!audioCtx)audioCtx=new C();if(audioCtx.state==="suspended")audioCtx.resume();return audioCtx}catch(e){return null}}
+
+function beep(correct){
+  const c=ensureAudio();if(!c)return;
+  const now=c.currentTime;
+  const tones=correct?[523.25,659.25,783.99,1046.5,1318.51]:[220,174.61,146.83,110,82.41];
+  const type=correct?"sine":"square";
+  tones.forEach((f,i)=>{
+    const o=c.createOscillator(),g=c.createGain();
+    const t=now+i*(correct?.07:.075);
+    o.type=type;o.frequency.setValueAtTime(f,t);
+    g.gain.setValueAtTime(.0001,t);
+    g.gain.exponentialRampToValueAtTime(1.0,t+.012);
+    g.gain.exponentialRampToValueAtTime(.0001,t+(correct?.25:.30));
+    o.connect(g);g.connect(c.destination);o.start(t);o.stop(t+(correct?.27:.32));
+  });
+}
+
+function fireworks(good){
+  const canvas=$("fx"),ctx=canvas.getContext("2d");
+  const dpr=Math.min(devicePixelRatio||1,2);
+  canvas.width=innerWidth*dpr;canvas.height=innerHeight*dpr;
+  ctx.setTransform(dpr,0,0,dpr,0,0);
+  const cx=innerWidth/2,cy=innerHeight*.48;
+  const particles=[];
+  const count=190;
+  for(let i=0;i<count;i++){
+    const a=Math.PI*2*i/count+(Math.random()-.5)*.045;
+    const ring=i%3;
+    const speed=(ring===0?3.4:ring===1?4.8:6.0)+Math.random()*1.8;
+    particles.push({
+      x:cx,y:cy,vx:Math.cos(a)*speed,vy:Math.sin(a)*speed,
+      life:55+Math.random()*30,size:1.4+Math.random()*2.4,
+      delay:Math.random()*5
+    });
+  }
+  let frame=0;
+  function draw(){
+    ctx.clearRect(0,0,innerWidth,innerHeight);
+    particles.forEach(p=>{
+      if(frame<p.delay)return;
+      p.x+=p.vx;p.y+=p.vy;p.vy+=.055;p.vx*=.994;p.vy*=.994;p.life--;
+      if(p.life>0){
+        ctx.globalAlpha=Math.min(1,p.life/22);
+        ctx.fillStyle=good?"#18e76b":"#ff3152";
+        ctx.beginPath();ctx.arc(p.x,p.y,p.size,0,Math.PI*2);ctx.fill();
+      }
+    });
+    ctx.globalAlpha=1;
+    if(frame++<92)requestAnimationFrame(draw);else ctx.clearRect(0,0,innerWidth,innerHeight);
+  }
+  draw();
+}
+
+function formatTime(sec){
+  sec=Math.max(0,Math.floor(Number(sec)||0));
+  if(sec>=3600){
+    const h=Math.floor(sec/3600),m=Math.floor((sec%3600)/60),ss=sec%60;
+    return h+":"+String(m).padStart(2,"0")+":"+String(ss).padStart(2,"0");
+  }
+  return String(Math.floor(sec/60)).padStart(2,"0")+":"+String(sec%60).padStart(2,"0");
+}
+
+function parseCentralDateTime(value, baseDate){
+  if(value===null || value===undefined || value==="") return NaN;
+  const v=String(value).trim();
+  if(!v) return NaN;
+
+  // ISO / normal browser date strings.
+  let t=Date.parse(v);
+  if(Number.isFinite(t)) return t;
+
+  // Common Central Sheet formats: DD/MM/YYYY HH:mm:ss, DD/MM/YYYY hh:mm AM/PM,
+  // and similar comma-separated variants.
+  let m=v.match(/^(\d{1,2})[\/-](\d{1,2})[\/-](\d{2,4})(?:[ ,T]+(\d{1,2}):(\d{2})(?::(\d{2}))?\s*(AM|PM)?)?$/i);
+  if(m){
+    let day=Number(m[1]), mon=Number(m[2])-1, year=Number(m[3]);
+    if(year<100) year+=2000;
+    let hh=Number(m[4]||0), mm=Number(m[5]||0), ss=Number(m[6]||0);
+    const ap=(m[7]||"").toUpperCase();
+    if(ap){ if(hh===12) hh=0; if(ap==="PM") hh+=12; }
+    const d=new Date(year,mon,day,hh,mm,ss,0);
+    return Number.isFinite(d.getTime())?d.getTime():NaN;
+  }
+
+  // Time-only value such as 02:40 PM. Combine it with the supplied base date.
+  m=v.match(/^(\d{1,2}):(\d{2})(?::(\d{2}))?\s*(AM|PM)?$/i);
+  if(m && baseDate){
+    const b=new Date(baseDate);
+    if(Number.isFinite(b.getTime())){
+      let hh=Number(m[1]), mm=Number(m[2]), ss=Number(m[3]||0);
+      const ap=(m[4]||"").toUpperCase();
+      if(ap){ if(hh===12) hh=0; if(ap==="PM") hh+=12; }
+      b.setHours(hh,mm,ss,0);
+      return b.getTime();
+    }
+  }
+  return NaN;
+}
+
+function formatCentralTimeUsed(raw,startExam,completedAt,resultDuration){
+  const maxDuration=(Number(resultDuration)>0?Number(resultDuration):DURATION);
+
+  // Best source: actual start/submission timestamps.
+  let endMs=parseCentralDateTime(completedAt);
+  let startMs=parseCentralDateTime(startExam, endMs);
+  if(Number.isFinite(startMs) && Number.isFinite(endMs)){
+    // If only clock times were supplied and the exam crossed midnight, account for it.
+    if(endMs<startMs && (startMs-endMs)<24*3600*1000) endMs+=24*3600*1000;
+    const elapsed=Math.floor((endMs-startMs)/1000);
+    if(elapsed>=0 && elapsed<=maxDuration) return formatTime(elapsed);
+  }
+
+  if(raw===null||raw===undefined||raw==="")return "—";
+
+  // New records normally arrive as seconds.
+  if(typeof raw==="number" && isFinite(raw)){
+    return raw>=0 && raw<=maxDuration ? formatTime(raw) : "—";
+  }
+
+  const v=String(raw).trim();
+  if(!v)return "—";
+
+  // Plain MM:SS or HH:MM:SS duration.
+  const parts=v.split(":").map(Number);
+  if(parts.length===2 && parts.every(Number.isFinite)){
+    const total=parts[0]*60+parts[1];
+    return total<=maxDuration && total>=0 ? formatTime(total) : "—";
+  }
+  if(parts.length===3 && parts.every(Number.isFinite)){
+    const total=parts[0]*3600+parts[1]*60+parts[2];
+    return total<=maxDuration && total>=0 ? formatTime(total) : "—";
+  }
+
+  // Some older Google Sheet date-formatted duration cells come back as an ISO
+  // date around 1899/1900. Treat only the clock portion as a duration, and only
+  // when it is within the configured exam duration.
+  const iso=v.match(/^(1899|1900)-\d{2}-\d{2}T(\d{2}):(\d{2}):(\d{2})(?:\.\d+)?(?:Z)?$/i);
+  if(iso){
+    const total=Number(iso[2])*3600+Number(iso[3])*60+Number(iso[4]);
+    return total>=0 && total<=maxDuration ? formatTime(total) : "—";
+  }
+
+  return "—";
+}
+function sectionFor(q){ return "TET প্রস্তুতি • শিখন অক্ষমতা ও ভাষা শিক্ষণ"; }
+
+function currentQuestionList(){ return revisionMode ? revisionQuestions : QUESTIONS; }
+function currentAnswerStore(){ return revisionMode ? revisionAnswers : answers; }
+function currentSubmitted(){ return revisionMode ? revisionSubmitted : submitted; }
+
+function render(){
+  const list=currentQuestionList();
+  const store=currentAnswerStore();
+  const answeredCount=Object.keys(store).filter(k=>list.some(q=>q.id===Number(k))).length;
+  const correctCount=Object.keys(store).filter(k=>{
+    const q=list.find(x=>x.id===Number(k));
+    return q && store[q.id]===q.answer;
+  }).length;
+
+  $("progress").textContent=`${answeredCount} of ${list.length} questions answered`;
+  const pf=$("progressFill");
+  if(pf){
+    pf.style.width=(list.length?Math.round((answeredCount/list.length)*100):0)+"%";
+    pf.classList.toggle("done",answeredCount===list.length);
+  }
+  $("sectionLabel").textContent=revisionMode ? "REVISION TEST · WRONG QUESTIONS" : "WB PRIMARY TET · MOCK TEST";
+
+  const blocks=list.map(q=>{
+    const a=store[q.id]||"";
+    return `${passageHTML(q.id)}<div class="allQuestion" id="question-${q.id}">
+      <div class="qnum">প্রশ্ন ${q.id}</div>
+      <div class="question">${q.htmlText||esc(q.text)}</div>
+      <div class="options optionTextOnly">${q.options.map((o,i)=>`
+        <div class="opt optionStatic">
+          <span class="letter">${letter(i)}.</span><span>${esc(o)}</span>
+        </div>`).join("")}</div>
+      <div class="omrCaption">OMR SHEET — প্রশ্ন ${q.id}-এর উত্তর এখানে দিন</div>
+      <div class="omrRow">
+        <strong class="omrNumber">${q.id}.</strong>
+        ${["A","B","C","D"].map(L=>{
+          let cls="omrBubble";
+          if(a && L===q.answer) cls+=" correct";
+          if(a && L===a && a!==q.answer) cls+=" wrong";
+          if(a===L) cls+=" selected";
+          return `<button type="button" class="${cls}" data-q="${q.id}" data-opt="${L}" ${a?"disabled":""} aria-label="প্রশ্ন ${q.id}, উত্তর ${L}">${L}</button>`;
+        }).join("")}
+      </div>
+      ${a?`<div class="omrFeedback ${!q.answer?"bad":(a===q.answer?"ok":"bad")}">${!q.answer?"এই প্রশ্নের বিকল্পে নির্ভরযোগ্য সঠিক উত্তর নেই; এটি স্কোরে গণনা করা হবে না।":(a===q.answer?"সঠিক উত্তর!":"ভুল উত্তর। সঠিক উত্তর: "+q.answer+". "+esc(q.options[answerIndex(q.answer)]))}</div>`:""}
+      ${a?`<div class="explain"><b>ব্যাখ্যা:</b> ${esc(q.explanation)}</div>`:""}
+    </div>`;
+  }).join("");
+
+  $("qcard").innerHTML=`
+    <div class="questionScroll">
+      ${blocks}
+      <div class="finalSubmitArea">
+        <button id="finalSubmitBtn" class="next finalSubmitBtn" type="button" disabled>${revisionMode?"REVISION SUBMIT":"FINAL SUBMIT"}</button>
+      </div>
+    </div>`;
+
+  $("qcard").querySelectorAll("[data-opt]").forEach(el=>{
+    el.onclick=()=>choose(Number(el.dataset.q),el.dataset.opt);
+  });
+
+  updateFinalSubmitState();
+
+  $("finalSubmitBtn").onclick=()=>{
+    const answered=Object.keys(currentAnswerStore()).filter(k=>list.some(q=>q.id===Number(k))).length;
+    if(answered !== list.length){
+      updateFinalSubmitState();
+      const firstUnanswered=list.find(q=>!currentAnswerStore()[q.id]);
+      if(firstUnanswered){
+        const target=document.getElementById(`question-${firstUnanswered.id}`);
+        if(target)target.scrollIntoView({behavior:"smooth",block:"center"});
+      }
+      return;
+    }
+    try{if(navigator.vibrate)navigator.vibrate([120,40,180]);}catch(e){}
+    if(revisionMode) finishRevision();
+    else submitExam();
+  };
+
+  $("correctBtn").textContent=`CORRECT: ${correctCount}/${list.length}`;
+}
+
+function countCorrectLive(){
+  const list=currentQuestionList();
+  const store=currentAnswerStore();
+  let n=0;
+  list.forEach(q=>{if(store[q.id]===q.answer)n++});
+  return n;
+}
+
+function choose(qid,L){
+  if(currentSubmitted())return;
+
+  const list=currentQuestionList();
+  const store=currentAnswerStore();
+  if(store[qid])return;
+
+  const q=list.find(x=>x.id===qid);
+  if(!q)return;
+  store[qid]=L;
+  const ok=L===q.answer;
+
+  beep(ok);
+  fireworks(ok);
+
+  const btns=document.querySelectorAll(`[data-q="${qid}"]`);
+  btns.forEach(b=>{
+    const opt=b.dataset.opt;
+    b.disabled=true;
+    b.classList.remove("selected","correct","wrong","answer-locked");
+    if(opt===q.answer) b.classList.add("correct");
+    if(opt===L && L!==q.answer) b.classList.add("wrong");
+    if(opt===L) b.classList.add("selected");
+    b.classList.add("answer-locked");
+  });
+
+  const answeredCount=Object.keys(store).filter(k=>list.some(x=>x.id===Number(k))).length;
+  $("progress").textContent=`${answeredCount} of ${list.length} questions answered`;
+  const pf=$("progressFill");
+  if(pf){
+    pf.style.width=(list.length?Math.round((answeredCount/list.length)*100):0)+"%";
+    pf.classList.toggle("done",answeredCount===list.length);
+  }
+  $("correctBtn").textContent=`CORRECT: ${countCorrectLive()}/${list.length}`;
+  updateFinalSubmitState();
+}
+
+function updateFinalSubmitState(){
+  const btn=$("finalSubmitBtn");
+  if(!btn)return;
+  const list=currentQuestionList();
+  const store=currentAnswerStore();
+  const answeredCount=Object.keys(store).filter(k=>list.some(q=>q.id===Number(k))).length;
+  const complete=answeredCount===list.length;
+  btn.disabled=!complete;
+  btn.title=complete?"সব প্রশ্নের উত্তর দেওয়া হয়েছে":"সব প্রশ্নের উত্তর না দেওয়া পর্যন্ত Submit করা যাবে না";
+}
+
+function startViewQuestions(){
+  const view=document.getElementById("viewScreen");
+  if(!view)return;
+  const list=QUESTIONS;
+  view.innerHTML=`
+    <div class="viewModeWrap">
+      <div class="viewModeInner">
+        <div class="viewModeHeader">
+          <strong>VIEW QUESTIONS · ${list.length} QUESTIONS</strong>
+          <span>Scroll up/down to read</span>
+        </div>
+        <div id="viewQuestionList">
+          ${list.map(q=>`${passageHTML(q.id)}
+            <div class="viewQuestion">
+              <div class="qnum">Q${q.id} · ${q.kind.toUpperCase()}</div>
+              <div class="question">${q.htmlText||esc(q.text)}</div>
+              <div class="options">
+                ${q.options.map((o,i)=>`
+                  <button type="button" class="opt viewOnlyOpt" disabled>
+                    <span class="letter">${letter(i)}.</span><span>${esc(o)}</span>
+                  </button>
+                `).join("")}
+              </div>
+            </div>
+          `).join("")}
+        </div>
+        <button id="closeViewQuestions" class="viewModeExit" type="button">BACK TO START</button>
+      </div>
+    </div>`;
+  view.classList.remove("hidden");
+  document.getElementById("closeViewQuestions").onclick=closeViewQuestions;
+}
+
+function closeViewQuestions(){
+  const view=document.getElementById("viewScreen");
+  if(view)view.classList.add("hidden");
+}
+
+
+function formatMath(value){
+ let h=esc(String(value ?? ''));
+ // Display mathematical fractions vertically, like the textbook formula diagrams.
+ h=h.replace(/\(\s*√3\s*\/\s*4\s*\)/g,'<span class="mathFrac"><span class="num">√3</span><span class="den">4</span></span>');
+ h=h.replace(/√3\s*\/\s*4/g,'<span class="mathFrac"><span class="num">√3</span><span class="den">4</span></span>');
+ h=h.replace(/1\s*\/\s*2/g,'<span class="mathFrac"><span class="num">1</span><span class="den">2</span></span>');
+ h=h.replace(/½/g,'<span class="mathFrac"><span class="num">1</span><span class="den">2</span></span>');
+ h=h.replace(/2A\s*\/\s*([a-zA-Z]+)/g,'<span class="mathFrac"><span class="num">2A</span><span class="den">$1</span></span>');
+ h=h.replace(/([0-9]+|√[0-9]+|[A-Za-z])\s*\/\s*([0-9]+|√[0-9]+|[A-Za-z])/g,'<span class="mathFrac"><span class="num">$1</span><span class="den">$2</span></span>');
+ return h;
+}
+function formatSolution(value){
+ const parts=String(value ?? '').split(/(?<=;)\s*|\n+/).filter(Boolean);
+ return parts.map(part=>{
+   const t=part.trim(); if(!t)return '';
+   const safe=formatMath(t);
+   return /[=⇒√²×÷]/.test(t) ? `<div class="solutionMath">${safe}</div>` : `<div class="solutionText">${safe}</div>`;
+ }).join('');
+}
+function makeShort(q){
+ const s=String(q.solution||'');
+ const match=s.match(/(?:সমাধান:|সমাধান\s*[-:])/);
+ if(match){const tail=s.slice(match.index+match[0].length).trim();return 'দ্রুত পদ্ধতি · Quick method: '+tail;}
+ return 'সূত্রে সরাসরি প্রদত্ত মান বসিয়ে হিসাব করুন। · Substitute the given values directly into the formula.';
+}
+
+function openStudyMode(){
+ const n=$("candidate").value.trim(); if(!n){$("candidate").focus();return}
+ candidate=n; $("start").classList.add("hidden"); $("studyScreen").classList.remove("hidden");
+ $("studyQuestionList").innerHTML=QUESTIONS.map(q=>`<article class="studyCard">
+ <h3>প্রশ্ন ${q.id}</h3><div class="bilingualQuestion">${esc(q.text)} <span class="englishInBrackets">(${esc(q.english)})</span></div>
+ <div style="margin-top:8px"><b>বিকল্প / Options:</b><ol>${q.options.map(o=>`<li>${esc(o)}</li>`).join("")}</ol></div>
+ <div class="studyFormula"><div style="font-family:system-ui,sans-serif;font-size:13px;color:var(--muted);margin-bottom:6px">প্রয়োগযোগ্য সূত্র · Formula</div><div class="mathDisplay">${formatMath(q.formula)}</div></div>
+ <p><b>পুঙ্খানুপুঙ্খ সহজ সমাধান · Detailed, easy solution:</b></p><div class="solutionStep">${formatSolution(q.solution)}</div>
+ <p><b>শর্ট ট্রিক · Short trick:</b></p><div class="solutionStep shortSolve">${formatSolution(q.short || makeShort(q))}</div>
+ <p><b>উত্তর · Answer:</b> ${q.answer}. ${esc(q.options["ABCD".indexOf(q.answer)] || 'প্রদত্ত বিকল্পে সঠিক উত্তর নেই; প্রশ্ন/বিকল্প যাচাই প্রয়োজন।')}</p></article>`).join("");
+}
+
+function startExam(){
+  const n=$("candidate").value.trim();
+  if(!n){$("candidate").focus();return}
+
+  const startBtn=$("startBtn");
+  if(startBtn)startBtn.disabled=true;
+  ensureAudio();
+  candidate=n;idx=0;answers={};submitted=false;warningGiven=false;
+  revisionMode=false;revisionQuestions=[];revisionAnswers={};revisionSubmitted=false;mainResult=null;
+  startAt=Date.now();
+  examStartAt=new Date(startAt).toISOString();
+  $("start").classList.add("hidden");
+  $("result").classList.add("hidden");
+  $("admin").classList.add("hidden");
+  $("revisionBanner").classList.remove("show");
+  $("exam").classList.remove("hidden");
+  $("timer").classList.remove("warn","real-exam-last2","timerHidden");
+  $("timer").textContent=formatTime(DURATION);
+  render();
+  clearInterval(timerHandle);
+  timerHandle=setInterval(tick,250);
+  tick();
+  if(startBtn)startBtn.disabled=false;
+}
+
+function tick(){
+  if(revisionMode)return;
+  const used=Math.floor((Date.now()-startAt)/1000),left=DURATION-used;
+  $("timer").textContent=formatTime(Math.max(0,left));
+
+  // Requested: warning + blinking only during the LAST TWO MINUTES.
+  const lastTwo=left<=120 && left>0;
+  $("timer").classList.toggle("warn",lastTwo);
+  $("timer").classList.toggle("real-exam-last2",lastTwo);
+
+  if(lastTwo && !warningGiven){
+    warningGiven=true;
+    try{
+      const c=ensureAudio();
+      if(c){
+        const playWarningTone=(delay)=>{
+          setTimeout(()=>{
+            try{
+              const o=c.createOscillator(),g=c.createGain();
+              o.type="square";
+              o.frequency.setValueAtTime(880,c.currentTime);
+              o.frequency.exponentialRampToValueAtTime(660,c.currentTime+0.22);
+              g.gain.setValueAtTime(0.0001,c.currentTime);
+              g.gain.exponentialRampToValueAtTime(0.28,c.currentTime+0.015);
+              g.gain.exponentialRampToValueAtTime(0.0001,c.currentTime+0.28);
+              o.connect(g);g.connect(c.destination);
+              o.start();o.stop(c.currentTime+0.3);
+            }catch(e){}
+          },delay);
+        };
+        playWarningTone(0);playWarningTone(360);playWarningTone(720);
+      }
+    }catch(e){}
+    setTimeout(()=>{if(!submitted && !revisionMode) alert("⚠️ সতর্কবার্তা: পরীক্ষার শেষ ২ মিনিট শুরু হয়েছে।");},50);
+  }
+
+  if(left<=0 && !submitted)submitExam();
+}
+
+function submitExam(){
+  if(submitted)return;
+  submitted=true;
+  clearInterval(timerHandle);
+  $("timer").textContent="00:00";
+  $("timer").classList.remove("warn","real-exam-last2");
+  $("timer").classList.add("timerHidden");
+  const used=Math.min(DURATION,Math.floor((Date.now()-startAt)/1000));
+  let correct=0,attempted=0;
+  QUESTIONS.forEach(q=>{
+    if(answers[q.id]){
+      attempted++;
+      if(answers[q.id]===q.answer)correct++;
+    }
+  });
+  const incorrect=attempted-correct,unanswered=QUESTIONS.length-attempted;
+  const result={
+    id:(crypto.randomUUID?crypto.randomUUID():String(Date.now())+Math.random()),
+    candidate,score:correct,percentage:correct/QUESTIONS.length*100,correct,incorrect,attempted,unanswered,
+    timeUsed:used,durationSeconds:DURATION,startExam:examStartAt||new Date().toISOString(),completedAt:new Date().toISOString(),answers:{...answers}
+  };
+  const arr=getResults();arr.push(result);saveResults(arr);
+  mainResult=result;
+  submitToCentralScoreboard(result);
+  showResult(mainResult);
+}
+
+function showResult(r){
+  clearInterval(timerHandle);
+  clearInterval(revisionTimerHandle);
+  $("timer").textContent="00:00";
+  $("timer").classList.remove("warn","real-exam-last2");
+  $("timer").classList.add("timerHidden");
+
+  // After FINAL SUBMIT, immediately show the complete result and review for all questions.
+  // Do not send the candidate into the wrong-only revision flow.
+  $("revisionBanner").classList.remove("show");
+  $("exam").classList.add("hidden");
+  $("result").classList.remove("hidden");
+  const rows=QUESTIONS.map(q=>{
+    const a=r.answers[q.id]||"",ok=a===q.answer;
+    const your=a?`${a}. ${q.options[answerIndex(a)]}`:"Unanswered";
+    const correct=`${q.answer}. ${q.options[answerIndex(q.answer)]}`;
+    return `<div class="reviewRow"><div class="reviewQ">Q${q.id}. ${esc(q.text)}</div>
+      <div class="reviewA">Candidate's Answer: <b>${esc(your)}</b> · Correct Answer: <b>${esc(correct)}</b>
+      <span class="tag ${!a?"skip":ok?"ok":"bad"}">${!a?"UNANSWERED":ok?"CORRECT":"WRONG"}</span>
+       <div style="margin-top:8px"><div class="explain"><b>ব্যাখ্যা:</b> ${esc(q.explanation)}</div></div></div></div>`;
+  }).join("");
+
+  $("result").innerHTML=`<div class="resultCard">
+    <h1 class="resultTitle">MOCK TEST RESULT</h1>
+    <div class="candidate">${esc(r.candidate)}</div>
+    <div class="stats">
+      <div class="stat"><small>Total Questions</small><strong>${QUESTIONS.length}</strong></div>
+      <div class="stat"><small>Attempted</small><strong>${r.attempted}</strong></div>
+      <div class="stat"><small>Correct</small><strong>${r.correct}</strong></div>
+      <div class="stat"><small>Incorrect</small><strong>${r.incorrect}</strong></div>
+      <div class="stat"><small>Unanswered</small><strong>${r.unanswered}</strong></div>
+      <div class="stat"><small>Score</small><strong>${r.score}</strong></div>
+      <div class="stat"><small>Percentage</small><strong>${r.percentage.toFixed(2)}%</strong></div>
+      <div class="stat"><small>Time Used</small><strong>${formatTime(r.timeUsed)}</strong></div>
+    </div>
+    <div class="resultActions">
+      <button onclick="window.print()">PRINT / SAVE PDF</button>
+      <button onclick="location.reload()">BACK TO START</button>
+    </div>
+    <div class="review"><h3>সম্পূর্ণ প্রশ্নের রিভিউ · ANSWER REVIEW</h3>${rows}</div>
+  </div>`;
+}
+
+function startRevision(originalAnswers){
+  revisionQuestions=QUESTIONS.filter(q=>originalAnswers[q.id] && originalAnswers[q.id]!==q.answer);
+  if(!revisionQuestions.length){
+    revisionMode=false;
+    clearInterval(revisionTimerHandle);
+    showResult(mainResult);
+    return;
+  }
+
+  revisionMode=true;
+  revisionAnswers={};
+  revisionSubmitted=false;
+  idx=0;
+  revisionStartAt=Date.now();
+
+  $("result").classList.add("hidden");
+  $("admin").classList.add("hidden");
+  $("start").classList.add("hidden");
+  $("exam").classList.remove("hidden");
+  $("revisionBanner").innerHTML='<span class="revisionStar">★</span> <span class="revisionText">যেগুলি ভুল করলাম</span> <span class="revisionStar">★</span>';
+  $("revisionBanner").classList.add("show");
+  $("timer").classList.remove("warn","real-exam-last2");
+  $("timer").textContent="00:00";
+  $("timer").classList.add("timerHidden");
+  $("correctBtn").textContent=`CORRECT: 0/${revisionQuestions.length}`;
+  render();
+
+  clearInterval(revisionTimerHandle);
+  revisionTimerHandle=null;
+}
+
+function tickRevision(){
+  // Revision Test is untimed. Keep the main timer completely hidden.
+  if(!revisionMode||revisionSubmitted)return;
+  $("timer").textContent="00:00";
+  $("timer").classList.remove("warn","real-exam-last2");
+  $("timer").classList.add("timerHidden");
+}
+
+function finishRevision(){
+  if(revisionSubmitted)return;
+  revisionSubmitted=true;
+  clearInterval(revisionTimerHandle);
+  clearInterval(timerHandle);
+  revisionMode=false;
+  $("revisionBanner").classList.remove("show");
+  $("timer").textContent="00:00";
+  $("timer").classList.remove("warn","real-exam-last2");
+  $("timer").classList.add("timerHidden");
+  // Revision is practice only; the original exam result remains unchanged.
+  if(mainResult)showResult(mainResult);
+}
+
+let adminPasswordSession="";
+
+function adminLogin(){
+  const p=prompt("Admin Password");
+  if(p!==ADMIN_PASSWORD){
+    alert("Incorrect password.");
+    return;
+  }
+  adminPasswordSession=p;
+  $("start").classList.add("hidden");
+  $("exam").classList.add("hidden");
+  $("result").classList.add("hidden");
+  $("admin").classList.remove("hidden");
+  $("timer").textContent="00:00";
+  $("timer").classList.add("timerHidden");
+  $("correctBtn").textContent="CORRECT: 0";
+  renderCentralAdmin();
+}
+
+function fetchCentralJson(url, attempts=3){
+  return new Promise((resolve,reject)=>{
+    let lastError=null;
+    const tryOnce=(n)=>{
+      fetch(url,{
+        method:"GET",
+        mode:"cors",
+        credentials:"omit",
+        cache:"no-store",
+        redirect:"follow"
+      }).then(async r=>{
+        const text=await r.text();
+        const clean=text.trim();
+        if(!r.ok) throw new Error("HTTP "+r.status);
+        if(!clean || clean[0]==="<" || /^<!doctype/i.test(clean)){
+          throw new Error("Central server returned HTML instead of JSON.");
+        }
+        try{
+          resolve(JSON.parse(clean));
+        }catch(e){
+          throw new Error("Central server returned invalid JSON.");
+        }
+      }).catch(err=>{
+        lastError=err;
+        if(n<attempts){
+          setTimeout(()=>tryOnce(n+1),700*n);
+        }else{
+          reject(lastError||new Error("Connection failed."));
+        }
+      });
+    };
+    tryOnce(1);
+  });
+}
+
+function saveCentralAdminCache(data){
+  try{
+    localStorage.setItem(
+      CENTRAL_ADMIN_CACHE_KEY,
+      JSON.stringify({savedAt:Date.now(),data:data})
+    );
+  }catch(e){}
+}
+
+function getCentralAdminCache(){
+  try{
+    const x=JSON.parse(localStorage.getItem(CENTRAL_ADMIN_CACHE_KEY)||"null");
+    return x&&Array.isArray(x.data)?x:null;
+  }catch(e){return null}
+}
+
+function renderCentralAdmin(){
+  const wrap=$("adminTable");
+  wrap.innerHTML='<div class="empty">Loading CENTRAL SCOREBOARD…</div>';
+
+  fetchCentralJson(CENTRAL_SCOREBOARD_URL+"?action=results&_="+Date.now(),3)
+    .then(data=>{
+      if(!data.ok)throw new Error(data.error||"Unable to load results.");
+      const results=Array.isArray(data.results)?data.results:[];
+      saveCentralAdminCache(results);
+      renderCentralAdminShell(results);
+    })
+    .catch(err=>{
+      const cached=getCentralAdminCache();
+      if(cached){
+        renderCentralAdminShell(cached.data);
+        wrap.insertAdjacentHTML(
+          "afterbegin",
+          '<div class="empty" style="padding:8px 0;color:var(--gold)">CENTRAL SERVER TEMPORARILY UNAVAILABLE — showing the last successfully loaded results. Tap REFRESH RESULTS to try again.</div>'
+        );
+      }else{
+        wrap.innerHTML='<div class="empty">CENTRAL SCOREBOARD TEMPORARILY UNAVAILABLE: '+esc(err.message||"Connection failed.")+'<br><br>Tap REFRESH RESULTS to try again.</div>';
+      }
+    });
+}
+
+function renderCentralAdminShell(results){
+  const wrap=$("adminTable");
+
+  wrap.innerHTML=`
+    <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:14px">
+      <div style="font-weight:1000">CENTRAL SCOREBOARD</div>
+      <button id="centralRefreshBtn" style="border:1px solid #444;border-radius:11px;padding:10px 13px;background:#111;color:#fff;font-weight:900">REFRESH RESULTS</button>
+    </div>
+    <div id="centralTestInfo" style="margin:6px 0 12px;color:var(--muted);font-weight:800">
+      All HTML exam results are stored in this single scoreboard.
+    </div>
+    <div id="centralResultsArea"></div>
+  `;
+
+  $("centralRefreshBtn").onclick=renderCentralAdmin;
+  renderCentralResults(results||[]);
+}
+
+function renderCentralResults(results){
+  const area=$("centralResultsArea");
+  if(!area)return;
+
+  if(!results.length){
+    area.innerHTML='<div class="empty">No results found.</div>';
+    return;
+  }
+
+  area.innerHTML=`
+    <div class="tableWrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Candidate Name</th>
+            <th>Scored</th>
+            <th>Exam Start</th>
+            <th>Exam End</th>
+            <th>Time Used (Minutes)</th>
+            <th>Percentage</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${results.map(r=>`
+            <tr>
+              <td>${esc(r.date||"")}</td>
+              <td>${esc(r.candidateName||"")}</td>
+              <td>${esc(r.scored==null?"":r.scored)}</td>
+              <td>${esc(r.examStart||"")}</td>
+              <td>${esc(r.examEnd||"")}</td>
+              <td>${esc(r.timeUsed||"")}</td>
+              <td>${esc(r.percentage||"")}</td>
+            </tr>
+          `).join("")}
+        </tbody>
+      </table>
+    </div>`;
+}
+
+function downloadCSV(){
+  const rows=document.querySelectorAll("#centralResultsArea table tbody tr");
+  if(!rows.length){alert("No Central results to download.");return}
+
+  const lines=[
+    ["Date","Candidate Name","Scored","Exam Start","Exam End","Time Used (Minutes)","Percentage"]
+  ];
+
+  rows.forEach(tr=>{
+    lines.push(Array.from(tr.cells).map(td=>td.textContent.trim()));
+  });
+
+  const txt="\uFEFF"+lines.map(row=>
+    row.map(v=>`"${String(v).replaceAll('"','""')}"`).join(",")
+  ).join("\r\n");
+
+  const blob=new Blob([txt],{type:"text/csv;charset=utf-8"});
+  const a=document.createElement("a");
+  a.href=URL.createObjectURL(blob);
+  a.download="Central_Scoreboard_Results.csv";
+  a.click();
+  setTimeout(()=>URL.revokeObjectURL(a.href),1000);
+}
+
+function updateSharePreview(){
+  document.title=TEST_TITLE;
+  const set=(selector,content)=>{
+    const el=document.querySelector(selector);
+    if(el)el.setAttribute("content",content);
+  };
+  set('meta[name="description"]',TEST_TITLE+" — Comprehension Test");
+  set('meta[property="og:title"]',TEST_TITLE);
+  set('meta[property="og:description"]',PASSAGE_INTRO);
+  set('meta[name="twitter:title"]',TEST_TITLE);
+  set('meta[name="twitter:description"]',PASSAGE_INTRO);
+  set('meta[name="application-name"]',TEST_TITLE);
+}
+
+function toggleTheme(){
+  document.body.classList.toggle("light");
+  localStorage.setItem("ctet_mock_theme",document.body.classList.contains("light")?"light":"dark");
+  $("themeBtn").textContent=document.body.classList.contains("light")?"☾ DARK":"☀ THEME";
+}
+function loadTheme(){
+  const light=localStorage.getItem("ctet_mock_theme")==="light";
+  document.body.classList.toggle("light",light);$("themeBtn").textContent=light?"☾ DARK":"☀ THEME";
+}
+
+$("startBtn").onclick=openStudyMode;
+$("startMockFromStudy").onclick=()=>{ $("studyScreen").classList.add("hidden"); startExam(); };
+$("candidate").addEventListener("keydown",e=>{if(e.key==="Enter")startExam()});
+$("themeBtn").onclick=toggleTheme;
+$("viewBtn").onclick=startViewQuestions;
+$("adminBtn").onclick=adminLogin;
+$("refreshAdmin").onclick=renderCentralAdmin;
+$("csvAdmin").onclick=downloadCSV;
+$("printAdmin").onclick=()=>window.print();
+$("clearAdmin").onclick=()=>{
+  alert("Central Scoreboard data is stored in Google Sheet. To preserve all previous results, this portal does not delete them.");
+};
+loadTheme();
+updateSharePreview();
+</script>
+<script id="REAL_EXAM_LAST2_TIMER_ONLY_SCRIPT">
+(function(){
+  function update(){
+    var t=document.getElementById('timer');
+    if(!t)return;
+    if(typeof revisionMode!=='undefined' && revisionMode){
+      t.classList.remove('real-exam-last2');
+      return;
+    }
+    var s=(t.textContent||'').trim();
+    var m=s.match(/^(\d{1,2}):(\d{2})$/);
+    if(!m){
+      t.classList.remove('real-exam-last2');
+      return;
+    }
+    var seconds=parseInt(m[1],10)*60+parseInt(m[2],10);
+    if(seconds>0 && seconds<=120){
+      t.classList.add('real-exam-last2');
+    }else{
+      t.classList.remove('real-exam-last2');
+    }
+  }
+  setInterval(update,100);
+  document.addEventListener('DOMContentLoaded',update);
+})();
+</script>
+</body>
+</html>
